@@ -3,50 +3,105 @@
   background-position: 0 0%;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 350px; }
+  min-height: 350px;
+}
 
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0px;
   overflow: hidden;
-  position: fixed; }
+  position: fixed;
+}
 
 nav ul li {
-  float: left; }
+  float: left;
+}
 
 nav ul li a {
   padding: 14px 16px;
   text-align: center;
   text-decoration: none;
   color: grey;
-  display: inline-block; }
+  display: inline-block;
+}
 
 .sidebar {
-  float: right; }
+  float: right;
+}
 
 .dropdown:hover {
-  background-color: black; }
+  background-color: black;
+}
 
 li.dropdown {
-  display: inline-block; }
+  display: inline-block;
+}
 
 .dropdown_content {
   display: none;
   position: absolute;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1; }
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
 
 .dropdown_content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: left; }
+  text-align: left;
+}
 
 .dropdown_content a:hover {
-  display: block; }
+  display: block;
+}
 
 .dropdown:hover .dropdown_content {
-  display: block; }
+  display: block;
+}
+
+/* Animation */
+.anim-typewriter {
+  -webkit-animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+          animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@-webkit-keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 24em;
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 24em;
+  }
+}
+
+@-webkit-keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(2, 0, 0, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(2, 0, 0, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+/*# sourceMappingURL=homepage.css.map */
