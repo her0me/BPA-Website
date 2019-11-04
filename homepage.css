@@ -1,89 +1,30 @@
 #home-image {
-    background-image: url("images/place holder.jpg");
+    background-image: url("Images_cr/alternative-energy-clouds-efficiency-414837.jpg");
     background-position: 0 0%;
+    height: 100%;
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 900 px;
+    
 }
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0px;
-    overflow: hidden;
-    position: fixed;
-}
-
-nav ul li {
-    float: left;
-}
-
-nav ul li a {
-    padding: 14px 16px;
-    text-align: center;
-    text-decoration: none;
-    color: grey;
-    display: inline-block;
-}
-
 .sidebar {
-    float: right;
-}
-
-.dropdown:hover {
-    background-color: black;
-}
-
-li.dropdown {
-    display: inline-block;
-}
-
-.dropdown_content {
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    -webkit-box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
-    box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+    height: 100%;
+    min-width: 32%;
+    max-width: 200px;
+    position: fixed;
     z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+
+
+    background-color: #111;
+
+    background: #de5626;
+    background: linear-gradient(to right bottom, #de5626, #C38B2E);
 }
 
-.dropdown_content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown_content a:hover {
-    display: block;
-}
-
-.dropdown:hover .dropdown_content {
-    display: block;
-}
-
-.anim-typewriter {
-    animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
-}
-
-@keyframes typewriter {
-    from {
-        width: 0;
-    }
-    to {
-        width: 24em;
-    }
-}
-
-@keyframes blinkTextCursor {
-    from {
-        border-right-color: rgba(255, 255, 255, 0.897);
-    }
-    to {
-        border-right-color: transparent;
-    }
-}
 
 
 /*# sourceMappingURL=homepage.css.map */
