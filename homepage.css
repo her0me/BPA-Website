@@ -225,3 +225,101 @@ ul li:hover .dropOut {
 
 
 /*# sourceMappingURL=homepage.css.map */
+
+/* #blur {
+    background-size: cover;
+    overflow: hidden;
+    position: absolute;
+    height: 100vh;
+    z-index: 10;
+    top: -50px;
+    left: -50px;
+    right: -50px;
+    bottom: -50px;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 3;
+}
+
+.blurctrl {
+    margin: 10px;
+    overflow: hidden;
+} */
+
+.info {
+    margin: 60vh 0 0 20px;
+    z-index: 999;
+}
+
+.sidebar {
+    height: 100vh;
+    min-width: 30%;
+    max-width: 37vw;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    overflow: visible;
+    -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(60%);
+    backdrop-filter: saturate(180%) blur(20px) brightness(60%);
+    /* backdrop-filter: blur(5px);
+    backdrop-filter: brightness(60%); */
+    /*background-color: #111;
+    background: #de5626;
+    background: linear-gradient(to right bottom, #de5626, #C38B2E);*/
+}
+
+.sidebar .info p {
+    color: rgb(255, 255, 255);
+}
+
+.Rectangle_5 {
+    position: absolute;
+    overflow: visible;
+    /* right: 52vh;
+    top: 13vh; */
+    /* width: 592;
+    height: 336;
+    box-shadow: 35px 29px 29px rgba(0, 0, 0, 0.55); */
+}
+
+.heading {
+    right: 90vh;
+    top: 13vh;
+    position: absolute;
+    z-index: 50;
+}
+
+.heading_txt {
+    position: absolute;
+    overflow: hidden;
+    /* width: 25%; */
+    white-space: nowrap;
+    text-align: left;
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5rem;
+    color: rgb(199, 112, 112);
+    letter-spacing: -0.27px;
+    margin-top: 35px;
+    margin-left: 18px;
+    position: fixed;
+    -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(60%);
+    -ms-backdrop-filter: saturate(180%) blur(20px) brightness(60%);
+    -moz-backdrop-filter: saturate(180%) blur(20px) brightness(60%);
+    backdrop-filter: saturate(180%) blur(20px) brightness(60%);
+}
+
+#Rectangle_5 {
+    box-shadow: 35px 29px 29px rgba(0, 0, 0, 0.55);
+    overflow: visible;
+}
+
+.siderect1 {
+    overflow: visible;
+    width: 400px;
+    height: 100%;
+    right: 0px;
+    top: 0px;
+}
+
