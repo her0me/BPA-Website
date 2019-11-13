@@ -161,11 +161,15 @@ span {
     font-style: normal;
     font-weight: normal;
     font-size: 5rem;
-    color: rgba(0, 0, 0, 1);
+    color: rgb(199, 112, 112);
     letter-spacing: -0.27px;
     margin-top: 35px;
     margin-left: 18px;
     position: fixed;
+    -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(60%);
+    -ms-backdrop-filter: saturate(180%) blur(20px) brightness(60%);
+    -moz-backdrop-filter: saturate(180%) blur(20px) brightness(60%);
+    backdrop-filter: saturate(180%) blur(20px) brightness(60%);
 }
 
 #Rectangle_5 {
