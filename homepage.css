@@ -87,7 +87,8 @@ span {
  testing end
 */
 
-#blur {
+
+/* #blur {
     background-size: cover;
     overflow: hidden;
     position: absolute;
@@ -104,24 +105,25 @@ span {
 .blurctrl {
     margin: 10px;
     overflow: hidden;
-}
+} */
 
 .info {
+    margin: 60vh 0 0 20px;
     z-index: 999;
-    color: rgba(0, 0, 0, 1.00)
 }
 
 .sidebar {
     height: 100vh;
-    min-width: 27%;
-    max-width: 30vw;
+    min-width: 30%;
+    max-width: 37vw;
     position: absolute;
     z-index: 2;
     top: 0;
     right: 0;
     overflow: visible;
-    margin: 50px;
-    /* backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(60%);
+    backdrop-filter: saturate(180%) blur(20px) brightness(60%);
+    /* backdrop-filter: blur(5px);
     backdrop-filter: brightness(60%); */
     /*background-color: #111;
     background: #de5626;
@@ -129,7 +131,7 @@ span {
 }
 
 .sidebar .info p {
-    color: rgba(0, 0, 0, 0.71);
+    color: rgb(255, 255, 255);
 }
 
 .Rectangle_5 {
