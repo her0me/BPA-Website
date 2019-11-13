@@ -2,37 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>home page</title>
-    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="scriptfiles/fullpage.js">
+    <link rel="stylesheet" href="homepage.css" />
+    <link rel="stylesheet" href="scriptfiles/fullpage.css" />
 </head>
 
 <body>
-
-    <nav class="navbar">
-        <ul class="navlist">
-            <li class="nav_active"><a href="#">Home</a></li>
-            <li><a href="#">Page 1</a></li>
-            <li><a href="#">Page 2</a></li>
-            <li><a href="#">Page 3</a></li>
-            <li class="drop">
-                <a href="#">Page 4 dropdown</a>
-                <div class="dropdownContain"> 
-                    <div class="dropOut">
-                        <div class="triangle"></div>
-                        <ul>
-                            <li href="#">DD link1</li>
-                            <li href="#">DD link2 </li>
-                            <li href="#">DD link3</li>
-                            <li href="#">DD link4</li>
-                        </ul>
-                    </div>    
-                </div>
-            </li>
-        </ul>
-    </nav>
     <section id="home-image"></section>
     <div class="sidebar">
         <section class="heading">
@@ -56,7 +35,53 @@
 
     </div>
 
+    <div id="fullpage">
+        <div class="section s1 fp-bg" id="home-image">
 
+            <!-- start of navigation-->
+            <!--navigation end-->
+
+            <div class="sidebar">
+                <div class="blurctrl">
+                    <div class="blur" id="blur"></div>
+                </div>
+                <section class="info">
+                    <p class="info"> test </p>
+                </section>
+            </div>
+            <div class="heading">
+                <svg class="Rectangle_5">
+                 <rect  fill="rgba(255,255,255,0.9)" id="Rectangle_5" width="592" height="336"> </rect>
+           </svg>
+                <div class="heading_txt">
+                    <section>Solar Energy <br/> Matters
+                        <br/> _
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="section s2">
+            <p>hi this is section 2</p>
+        </div>
+        <div class="section s3">
+            <p>hi this is section 3</p>
+        </div>
+        <div class="section s4">
+            <p>hi this is section 4</p>
+        </div>
+    </div>
+
+    <script src="scriptfiles/fullpage.js"></script>
+    <script>
+        new fullpage('#fullpage', {
+            lockAnchors: false,
+            anchors: ['1', '2', '3', '4'],
+            autoScrolling: true,
+            navigation: true,
+            navigationPosition: 'left',
+            navigationTooltips: ['Energy matters _', '#2', '#3', '#4']
+        })
+    </script>
 </body>
 
 </html>
