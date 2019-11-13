@@ -12,55 +12,21 @@
 </head>
 
 <body>
-    <section id="home-image"></section>
-
-    <div id="fullpage">
-        <div class="section s1 fp-bg" id="home-image">
-
-            <!-- start of navigation-->
-            <!--navigation end-->
-
-            <div class="sidebar">
-                <div class="blurctrl">
-                    <div class="blur" id="blur"></div>
-                </div>
-                <section class="info">
-                    <p class="info"> test </p>
-                </section>
-            </div>
-            <div class="heading">
-                <svg class="Rectangle_5">
-                 <rect  fill="rgba(255,255,255,0.9)" id="Rectangle_5" width="592" height="336"> </rect>
-           </svg>
-                <div class="heading_txt">
-                    <section>Solar Energy <br/> Matters
-                        <br/> _
-                    </section>
-                </div>
-            </div>
-        </div>
-        <div class="section s2">
-            <p>hi this is section 2</p>
-        </div>
-        <div class="section s3">
-            <p>hi this is section 3</p>
-        </div>
-        <div class="section s4">
-            <p>hi this is section 4</p>
-        </div>
-    </div>
-
-    <script src="scriptfiles/fullpage.js"></script>
-    <script>
-        new fullpage('#fullpage', {
-            lockAnchors: false,
-            anchors: ['1', '2', '3', '4'],
-            autoScrolling: true,
-            navigation: true,
-            navigationPosition: 'left',
-            navigationTooltips: ['Energy matters _', '#2', '#3', '#4']
-        })
-    </script>
+    <nav class="navbar">
+        <ul class="navlist">
+            <li class="nav_active"><a href="#">Home</a></li>
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+            <li class="dropdown"><a href="#">Page 4 dropdown</a>
+                <div class="dropdown_content"> <a href="#"> DD link1</a>
+                    <a href="#"> DD link2 </a>
+                    <a href="#">  DD link3</a>
+                    <a href="#">  DD link4</a></div>
+            </li>
+        </ul>
+    </nav>
+   
 </body>
 
 </html>
