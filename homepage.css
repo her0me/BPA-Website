@@ -1,30 +1,180 @@
-#home-image {
+#home-image,
+fp-bg {
     background-image: url("Images_cr/alternative-energy-clouds-efficiency-414837.jpg");
-    background-position: 0 0%;
-    height: 100%;
-    width: 100%;
+    /* top: 0;
+    left: 0; */
     background-size: cover;
     background-repeat: no-repeat;
-    
-}
-.sidebar {
-    height: 100%;
-    min-width: 32%;
-    max-width: 200px;
-    position: fixed;
+    background-size: cover;
     z-index: 1;
+    background-position: center 80%;
+}
+
+body {
+    overflow: visible;
+    margin: 0 0 0 0;
+}
+
+#fullpage {
+    padding: 0 0 0 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 0;
+}
+
+.section {
+    height: 100vh;
+    position: relative;
+    padding: 0 0 0 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.s1 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 0 0;
+}
+
+
+/*
+text for testing
+*/
+
+.s2 {
+    background-image: url(images/place\ holder.jpg);
+    background-size: cover;
+}
+
+.s2 p {
+    text-align: center;
+    color: white;
+    font-size: 4em;
+}
+
+.s3 {
+    background-image: url(images/place\ holder.jpg);
+    background-size: cover;
+}
+
+.s3 p {
+    text-align: center;
+    color: white;
+    font-size: 4em;
+}
+
+.s4 {
+    background-image: url(images/place\ holder.jpg);
+    background-size: cover;
+}
+
+.s4 p {
+    text-align: center;
+    color: white;
+    font-size: 4em;
+}
+
+span {
+    z-index: 1000;
+    color: #303030;
+}
+
+
+/*
+ testing end
+*/
+
+#blur {
+    background-size: cover;
+    overflow: hidden;
+    position: absolute;
+    height: 100vh;
+    z-index: 10;
+    top: -50px;
+    left: -50px;
+    right: -50px;
+    bottom: -50px;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 3;
+}
+
+.blurctrl {
+    margin: 10px;
+    overflow: hidden;
+}
+
+.info {
+    z-index: 999;
+    color: rgba(0, 0, 0, 1.00)
+}
+
+.sidebar {
+    height: 100vh;
+    min-width: 27%;
+    max-width: 30vw;
+    position: absolute;
+    z-index: 2;
     top: 0;
     right: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
-
-
-    background-color: #111;
-
+    overflow: visible;
+    margin: 50px;
+    /* backdrop-filter: blur(2px);
+    backdrop-filter: brightness(60%); */
+    /*background-color: #111;
     background: #de5626;
-    background: linear-gradient(to right bottom, #de5626, #C38B2E);
+    background: linear-gradient(to right bottom, #de5626, #C38B2E);*/
 }
 
+.sidebar .info p {
+    color: rgba(0, 0, 0, 0.71);
+}
 
+.Rectangle_5 {
+    position: absolute;
+    overflow: visible;
+    /* right: 52vh;
+    top: 13vh; */
+    /* width: 592;
+    height: 336;
+    box-shadow: 35px 29px 29px rgba(0, 0, 0, 0.55); */
+}
 
-/*# sourceMappingURL=homepage.css.map */
+.heading {
+    right: 90vh;
+    top: 13vh;
+    position: absolute;
+    z-index: 50;
+}
+
+.heading_txt {
+    position: absolute;
+    overflow: hidden;
+    /* width: 25%; */
+    white-space: nowrap;
+    text-align: left;
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5rem;
+    color: rgba(0, 0, 0, 1);
+    letter-spacing: -0.27px;
+    margin-top: 35px;
+    margin-left: 18px;
+    position: fixed;
+}
+
+#Rectangle_5 {
+    box-shadow: 35px 29px 29px rgba(0, 0, 0, 0.55);
+    overflow: visible;
+}
+
+.siderect1 {
+    overflow: visible;
+    width: 400px;
+    height: 100%;
+    right: 0px;
+    top: 0px;
+}

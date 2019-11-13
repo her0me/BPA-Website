@@ -1,0 +1,31 @@
+set 1
+
+<svg class="siderect1">
+            <linearGradient
+              id="LinearGradientFill1"
+              spreadMethod="pad"
+              x1="0.882"
+              x2="-0.603"
+              y1="0.102"
+              y2="1.551"
+            >
+              <stop offset="0" stop-color="#e34c25" stop-opacity="1"></stop>
+              <stop offset="1" stop-color="#afb434" stop-opacity="1"></stop>
+            </linearGradient>
+            <rect
+              fill="url(#LinearGradientFill1)"
+              stroke="rgba(112,112,112,1)"
+              stroke-width="1px"
+              stroke-linejoin="miter"
+              stroke-linecap="butt"
+              stroke-miterlimit="4"
+              shape-rendering="auto"
+              class="Rectangle_3_Class"
+              rx="0"
+              ry="0"
+              x="0"
+              y="0"
+              width="612"
+              height="1080"
+            ></rect>
+          </svg>
