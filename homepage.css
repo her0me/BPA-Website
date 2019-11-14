@@ -247,11 +247,11 @@ nav {
 	height: 80px;
     position: absolute;
     z-index: 999;
-    right: 32%;
+    left: 10px;
 }
 
 ul {
-	text-align: center;
+	text-align: left;
 }
 
 ul li {
@@ -276,7 +276,7 @@ ul li a {
 	line-height: 80px;
 	padding: 0 20px;
 	height: 80px;
-	color: #777;
+	color: #999;
 	-webkit-transition: all .1s ease-out;
 	-moz-transition: all .1s ease-out;
 	-ms-transition: all .1s ease-out;
