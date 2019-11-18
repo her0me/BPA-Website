@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- this site is for mobile -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="scriptfiles/fullpage.css">
+    <link rel="stylesheet" href="mobile_homepage.css" />
+    <link rel="stylesheet" href="scriptfiles/fullpage.js" />
+</head>
+
+<body>
+    <div id="fullpage">
+        <div class="section s1 fp-bg" id="home-image">
+            <div class="heading">
+                <div class="Rectangle_5"></div>
+                <div class="heading_txt">
+                    <section>Clean Energy
+                        <br/> Matters
+                        <br/> _
+                    </section>
+                </div>
+            </div>
+            <div class="home_txt">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+            </div>
+
+        </div>
+        <!-- /////////////////////////////////////////////////////////////// -->
+
+        <div class="section s2">
+            <div class="heading">
+                <div class="Rectangle_5"></div>
+                <div class="heading_txt">
+                    <section>Wind Energy
+                        <br/> Matters
+                        <br/> _
+                    </section>
+                </div>
+            </div>
+            <div class="home_txt">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+            </div>
+        </div>
+        <!-- /////////////////////////////////////////////////////////////// -->
+
+        <div class="section s3">
+            <div class="heading">
+                <div class="Rectangle_5"></div>
+                <div class="heading_txt">
+                    <section>Solar Energy
+                        <br/> Matters
+                        <br/> _
+                    </section>
+                </div>
+            </div>
+            <div class="home_txt">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+            </div>
+        </div>
+        <!-- /////////////////////////////////////////////////////////////// -->
+
+        <div class="section s4">
+            <div class="heading">
+                <div class="Rectangle_5"></div>
+                <div class="heading_txt">
+                    <section>Geo-Thermal<br/> Energy Matters
+                        <br/> _
+                    </section>
+                </div>
+            </div>
+            <div class="home_txt">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+            </div>
+        </div>
+        <!-- /////////////////////////////////////////////////////////////// -->
+
+        <div class="section s5">
+            <div class="heading">
+                <div class="Rectangle_5"></div>
+                <div class="heading_txt">
+                    <section>regulation
+                        <br/> Matters
+                        <br/> _
+                    </section>
+                </div>
+            </div>
+            <div class="home_txt">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="scriptfiles/fullpage.js"></script>
+    <script>
+        new fullpage('#fullpage', {
+            lockAnchors: false,
+            anchors: ['1', '2', '3', '4', '5'],
+            autoScrolling: true,
+            navigation: true,
+            navigationPosition: 'left',
+            navigationTooltips: ['Energy matters _', 'Wind', 'Solar', 'Geo-Thermal', 'Challenges'],
+        })
+    </script>
+</body>
+
+</html>
