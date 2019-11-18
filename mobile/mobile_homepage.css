@@ -1,0 +1,83 @@
+    #home-image {
+        background-image: url("Images_cr/alternative-energy-clouds-efficiency-414837.jpg");
+        height: 70vh;
+        background-size: auto 70vh;
+        background-repeat: no-repeat;
+    }
+    
+    .s2 {
+        background-image: url(Images_cr/alternative-alternative-energy-electricity-1292464.jpg);
+        height: 70vh;
+        background-size: auto 70vh;
+        background-repeat: no-repeat;
+    }
+    
+    .s3 {
+        background-image: url(Images_cr/bird-s-eye-view-of-solar-panel-roof-1907419.jpg);
+        height: 70vh;
+        background-size: auto 70vh;
+        background-repeat: no-repeat;
+    }
+    
+    .s4 {
+        background-image: url(images/place\ holder.jpg);
+        height: 70vh;
+        background-size: auto 70vh;
+        background-repeat: no-repeat;
+    }
+    
+    .s5 {
+        background-image: url(images/place\ holder.jpg);
+        height: 70vh;
+        background-size: auto 70vh;
+        background-repeat: no-repeat;
+    }
+    
+    .home_txt p {
+        text-align: center;
+        margin-bottom: 10vh;
+    }
+    
+    .fp-tableCell {
+        vertical-align: bottom;
+    }
+    
+    .heading_txt {
+        position: absolute;
+    }
+    
+    .heading {
+        -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
+        -ms-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
+        -moz-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
+        backdrop-filter: saturate(180%) blur(20px) brightness(50%);
+        box-shadow: 35px 29px 29px rgba(0, 0, 0, 0.55);
+        overflow: hidden;
+        width: 85%;
+        height: 25%;
+        margin-left: auto;
+        margin-right: auto;
+        /* padding: ; */
+    }
+    
+    .heading_txt {
+        /* position: absolute; */
+        overflow: hidden;
+        /* width: 25%; */
+        white-space: nowrap;
+        /* text-align: center; */
+        font-family: Rockwell;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 6.4vh;
+        color: rgb(255, 255, 255);
+        letter-spacing: -0.27px;
+        /* margin-right: auto;
+    margin-left: auto; */
+        /* position: fixed; */
+        z-index: 605;
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }

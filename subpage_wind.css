@@ -5,57 +5,39 @@
 	background-image: url(url), -moz-linear-gradient(270deg,rgba(227,76,37,1.00) 0%,rgba(196,138,46,1.00) 100%);
 	background-image: url(url), -o-linear-gradient(270deg,rgba(227,76,37,1.00) 0%,rgba(196,138,46,1.00) 100%);
 	background-image: url(url), linear-gradient(180deg,rgba(227,76,37,1.00) 0%,rgba(196,138,46,1.00) 100.00%);*/
-    margin-left: 75px;
 }
 
-.Background {
+.background {
     position: absolute;
-    overflow: hidden;
+    overflow: scroll;
     width: 100vw;
-    height: 100vh;
+    height: 300vh;
     left: 0px;
     top: 0px;
-    z-index: 5;
+    z-index: 0;
 }
 
-.borderLayout {
-    width: 506px;
-    height: 336px;
-    position: fixed;
-    transition: 0.4s;
+.main_text {
+    position: relative;
+    z-index: 999;
+    padding-right: 75px;
+    padding-left: 75px;
 }
 
-svg {
-    z-index: 50;
-}
-
-.Rectangle_11_Class {
-    width: 506px;
-    height: 336px;
-    position: fixed;
-    transition: 0.4s;
-}
-
-.heading {
-    margin-top: 64px;
-    margin-left: 20px;
-    width: 506px;
-    height: 336px;
-}
-
-.heading_txt {
+.Rectangle_3 {
     position: absolute;
-    overflow: hidden;
-    width: 473px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Rockwell;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 80px;
-    color: rgba(0, 0, 0, 1);
-    letter-spacing: -0.27px;
-    margin-top: 35px;
-    margin-left: 18px;
+    overflow: visible;
+    width: 100vw;
+    /* height: 300vh; */
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+    height: fit-content;
+}
+
+.Mov_obj {
+    top: 10vh;
+    left: -25vw;
+    z-index: 500;
     position: fixed;
 }

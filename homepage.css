@@ -45,25 +45,13 @@ text for testing
 */
 
 .s2 {
-    background-image: url(images/place\ holder.jpg);
+    background-image: url(Images_cr/alternative-alternative-energy-electricity-1292464.jpg);
     background-size: cover;
-}
-
-.s2 p {
-    text-align: center;
-    color: white;
-    font-size: 4em;
 }
 
 .s3 {
-    background-image: url(images/place\ holder.jpg);
+    background-image: url(Images_cr/bird-s-eye-view-of-solar-panel-roof-1907419.jpg);
     background-size: cover;
-}
-
-.s3 p {
-    text-align: center;
-    color: white;
-    font-size: 4em;
 }
 
 .s4 {
@@ -71,10 +59,9 @@ text for testing
     background-size: cover;
 }
 
-.s4 p {
-    text-align: center;
-    color: white;
-    font-size: 4em;
+.s5 {
+    background-image: url(images/place\ holder.jpg);
+    background-size: cover;
 }
 
 span {
@@ -114,8 +101,7 @@ span {
 
 .sidebar {
     height: 100vh;
-    min-width: 30%;
-    max-width: 37vw;
+    width: 32%;
     position: absolute;
     z-index: 2;
     top: 0;
@@ -136,7 +122,7 @@ span {
 
 .Rectangle_5 {
     position: absolute;
-    overflow: visible;
+    overflow: hidden;
     /* right: 52vh;
     top: 13vh; */
     /* width: 592;
@@ -152,7 +138,6 @@ span {
 }
 
 .heading_txt {
-    position: absolute;
     overflow: hidden;
     /* width: 25%; */
     white-space: nowrap;
@@ -161,20 +146,31 @@ span {
     font-style: normal;
     font-weight: normal;
     font-size: 5rem;
-    color: rgb(199, 112, 112);
+    color: rgb(255, 255, 255);
     letter-spacing: -0.27px;
     margin-top: 35px;
     margin-left: 18px;
     position: fixed;
-    -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(60%);
-    -ms-backdrop-filter: saturate(180%) blur(20px) brightness(60%);
-    -moz-backdrop-filter: saturate(180%) blur(20px) brightness(60%);
-    backdrop-filter: saturate(180%) blur(20px) brightness(60%);
+    z-index: 605;
+    padding-right: 18px;
+    /* -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
+    -ms-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
+    -moz-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
+    backdrop-filter: saturate(180%) blur(20px) brightness(50%); */
 }
 
-#Rectangle_5 {
+.Rectangle_5 {
+    -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
+    -ms-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
+    -moz-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
+    backdrop-filter: saturate(180%) blur(20px) brightness(50%);
     box-shadow: 35px 29px 29px rgba(0, 0, 0, 0.55);
     overflow: visible;
+    width: 592px;
+    height: 336px;
+    top: 0;
+    left: 0;
+    z-index: 600;
 }
 
 .siderect1 {
@@ -183,4 +179,18 @@ span {
     height: 100%;
     right: 0px;
     top: 0px;
+}
+
+
+/*----------------------*/
+
+.footer {
+    /* width: 100vw; */
+    /* height: 10vh; */
+    height: 40vh;
+    position: relative;
+    padding: 0 0 0 0;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
