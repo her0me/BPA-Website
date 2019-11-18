@@ -272,7 +272,7 @@ ul li a {
 	line-height: 80px;
 	padding: 0 20px;
 	height: 80px;
-	color: #999;
+	color: #FFF;
 	-webkit-transition: all .1s ease-out;
 	-moz-transition: all .1s ease-out;
 	-ms-transition: all .1s ease-out;
@@ -348,7 +348,7 @@ ul li a:hover {
 }
 
 .dropOut ul li:hover {
-    background: #f6f690;
+    background: #CCCCCC;
 }
 
 ul li:hover a { 
