@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form>
+        <p> 1st Number : <input type="text" id="firstNumber" /><br> </p>
+        <p> 2nd Number: <input type="text" id="secondNumber" /><br></p>
+
+
+        <p> electricity usage(kWH): <input type="text" id="usage"></p>
+        <p> cost of electricity(permonth): <input type="text" id="cost"></p>
+
+
+        <input type="button" onClick="calculate()" Value="calculate" />
+        <!-- <input type="button" onClick="multiplyBy()" Value="Multiply" />
+        <input type="button" onClick="divideBy()" Value="Divide" /> -->
+    </form>
+    <p> <span>The Result is :<span id="result"></span></<span></p>
+    <p> the cost per month:<span id="cost_per_month"> ,<br></span></p>
+    <!-- <span id="cost"></span> -->
+    <p>savings per month <span id="saving_per_month"></span><br></p>
+    <p>savings <span id="saving"></span><br></p>
+    <p>co2 emissions <span id="co2_emissions_saved"></span><br></p>
+
+
+
+
+
+    <script>
+        function multiplyBy() {
+            num1 = document.getElementById("firstNumber").value;
+            num2 = document.getElementById("secondNumber").value;
+            document.getElementById("result").innerHTML = num1 * num2;
+        }
+
+        function divideBy() {
+            num1 = document.getElementById("firstNumber").value;
+            num2 = document.getElementById("secondNumber").value;
+            document.getElementById("result").innerHTML = num1 / num2;
+        }
+
+        function calculate() {
+
+            kWH_usage = document.getElementById("usage").value;
+            cPM = document.getElementById("cost").value;
+
+            var Cost_20Yrs = cPM * 12 * 20;
+            var Cost_PP = 10000;
+            var Savings = Cost_PP - Cost_20Yrs;
+            var electricityProduced = kWH_usage * 12 * 20;
+            var savedEmisssion = Math.round(electricityProduced * 0.45);
+
+
+
+
+
+            // document.getElementById("result").innerHTML = 
+
+            document.getElementById("cost_per_month").innerHTML = Math.round(Cost_PP / (20 * 12));
+            document.getElementById("saving").innerHTML = Savings;
+            document.getElementById("co2_emissions_saved").innerHTML = savedEmisssion;
+
+
+
+            //time = document.getElementById("time").value;
+
+            //var  result
+
+        }
+    </script>
+
+
+</body>
+
+</html>
