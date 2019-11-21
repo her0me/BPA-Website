@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge" /> -->
     <title>home page</title>
-    <link rel="stylesheet" href="scriptfiles/fullpage.js">
+    <link rel="text/javascript" href="scriptfiles/fullpage.js">
     <link rel="stylesheet" href="homepage.css" />
+    <link rel="stylesheet" href="nav_bar.css" />
     <link rel="stylesheet" href="scriptfiles/fullpage.css" />
 
 </head>
@@ -16,7 +17,7 @@
     <!-- start of navigation-->
     <nav class="navbar">
         <ul class="navlist">
-            <li class="nav_active"><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="solar.htm">Solar</a></li>
             <li><a href="wind.htm">Wind</a></li>
             <li><a href="#">([[other]])</a></li>
@@ -25,7 +26,6 @@
                 <a href="#">regulation</a>
                 <div class="dropdownContain">
                     <div class="dropOut">
-                        <div class="triangle"></div>
                         <ul>
                             <li href="#">DD link1</li>
                             <li href="#">DD link2 </li>
@@ -167,6 +167,13 @@
             //autoScrolling: false, 
         })
     </script>
+
+    <script type="text/javascript">
+        if (screen.width <= 699) {
+            document.location = "mobile/m_index.htm";
+        }
+    </script>
+
 </body>
 
 </html>
