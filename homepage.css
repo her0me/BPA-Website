@@ -54,9 +54,20 @@ fp-bg {
     background-size: cover;
 }
 
-span {
+
+/* .footer span {
     z-index: 1000;
     color: #303030;
+} */
+
+.footer {
+    text-align: center;
+    font-size: 3em;
+    height: 10vh;
+}
+
+.content {
+    margin: 50px
 }
 
 .info {
