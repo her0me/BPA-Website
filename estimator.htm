@@ -11,9 +11,6 @@
 <body>
 
     <form>
-        <p> 1st Number : <input type="text" id="firstNumber" /><br> </p>
-        <p> 2nd Number: <input type="text" id="secondNumber" /><br></p>
-
 
         <p> electricity usage(kWH): <input type="text" id="usage"></p>
         <p> cost of electricity(permonth): <input type="text" id="cost"></p>
@@ -35,18 +32,6 @@
 
 
     <script>
-        function multiplyBy() {
-            num1 = document.getElementById("firstNumber").value;
-            num2 = document.getElementById("secondNumber").value;
-            document.getElementById("result").innerHTML = num1 * num2;
-        }
-
-        function divideBy() {
-            num1 = document.getElementById("firstNumber").value;
-            num2 = document.getElementById("secondNumber").value;
-            document.getElementById("result").innerHTML = num1 / num2;
-        }
-
         function calculate() {
 
             kWH_usage = document.getElementById("usage").value;

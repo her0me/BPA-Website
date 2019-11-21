@@ -13,11 +13,27 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="scriptfiles/fullpage.css">
-    <link rel="stylesheet" href="mobile_homepage.css" />
+    <link rel="stylesheet" href="m_homepage.css" />
     <link rel="stylesheet" href="scriptfiles/fullpage.js" />
+    <link rel="stylesheet" href="m_navigation.css" />
 </head>
 
 <body>
+    <div class="navigation">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <!-- close end -->
+            <a href="#">SOLAR</a>
+            <a href="#">WIND</a>
+            <a href="#">([[OTHERS]])</a>
+            <a href="#">REGULATIONS</a>
+            <a href="#">ESITMATOR</a>
+        </div>
+
+        <span onclick="openNav()"> &#9776; </span>
+    </div>
+    <!-- ///////////////////////////////////////////////////////////////////////////////// -->
+    <!-- end nav start page -->
     <div id="fullpage">
         <div class="section s1 fp-bg" id="home-image">
             <div class="heading">
@@ -111,6 +127,18 @@
             navigationTooltips: ['Energy matters _', 'Wind', 'Solar', 'Geo-Thermal', 'Challenges'],
         })
     </script>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+
 </body>
 
 </html>

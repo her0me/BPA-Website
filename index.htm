@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge" /> -->
     <title>home page</title>
-    <link rel="stylesheet" href="scriptfiles/fullpage.js">
+    <link rel="text/javascript" href="scriptfiles/fullpage.js">
     <link rel="stylesheet" href="homepage.css" />
     <link rel="stylesheet" href="navigation.css" />
     <link rel="stylesheet" href="scriptfiles/fullpage.css" />
@@ -23,9 +23,8 @@
             <li><a href="geo.htm">Geo-Thermal</a></li>
             <li class="drop">
                 <a href="#support.html">Support</a>
-                <div class="dropdownContain"> 
+                <div class="dropdownContain">
                     <div class="dropOut">
-                        <div class="triangle"></div>
                         <ul>
                             <li href="#">EPA</li>
                             <li href="#">Zoning</li>
@@ -168,6 +167,13 @@
             //autoScrolling: false, 
         })
     </script>
+
+    <script type="text/javascript">
+        if (screen.width <= 699) {
+            document.location = "mobile/m_index.htm";
+        }
+    </script>
+
 </body>
 
 </html>
