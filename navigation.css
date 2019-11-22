@@ -167,11 +167,11 @@ nav>ul li a {
 	padding: 0 20px;
 	height: 56px;
 	color: #FFF;
-	-webkit-transition: all .1s ease-out;
-	-moz-transition: all .1s ease-out;
-	-ms-transition: all .1s ease-out;
-	-o-transition: all .1s ease-out;
-	transition: all .1s ease-out;
+	/*-webkit-transition: all .75s ease-out;
+	-moz-transition: all .75s ease-out;
+	-ms-transition: all .75s ease-out;
+	-o-transition: all .75s ease-out;
+	transition: all .75s ease-out;*/
 }
 
 ul li a:hover {
