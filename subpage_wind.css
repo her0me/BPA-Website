@@ -23,6 +23,11 @@ body {
     z-index: 0;
 } */
 
+.main_text p,
+.main_text h1 {
+    color: darkgray;
+}
+
 .main_text {
     position: relative;
     z-index: 999;
