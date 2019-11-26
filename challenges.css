@@ -1,0 +1,56 @@
+.section {
+    height: 100vh;
+    position: relative;
+    padding: 0 0 0 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.s1 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 0 0;
+    background-size: cover;
+    background-image: url(Images_cr/5c289afb9a15752f8f893a27_05.\ Flax.jpg);
+}
+
+.s2 {
+    background-color: #F4D03F;
+    background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+    background-size: cover;
+}
+
+.s3 {
+    background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(255, 255, 24, 1) 0%, rgba(37, 203, 215, 1) 90%);
+    background-size: cover;
+}
+
+.s4 {
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    background-size: cover;
+}
+
+.s5 {
+    background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(0, 93, 133, 1) 0%, rgba(0, 181, 149, 1) 90%);
+    background-size: cover;
+}
+
+.s6 {
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    white-space: nowrap;
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5rem;
+    color: rgb(255, 255, 255);
+    letter-spacing: -0.27px;
+}

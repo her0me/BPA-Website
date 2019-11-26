@@ -54,7 +54,7 @@
         box-shadow: 35px 29px 29px rgba(0, 0, 0, 0.55);
         overflow: hidden;
         width: 85%;
-        height: 25%;
+        height: 27%;
         margin-left: auto;
         margin-right: auto;
         /* padding: ; */
@@ -69,9 +69,10 @@
         font-family: Rockwell;
         font-style: normal;
         font-weight: normal;
-        font-size: 6.4vh;
+        font-size: 12vw;
         color: rgb(255, 255, 255);
         letter-spacing: -0.27px;
+        top: 6%;
         /* margin-right: auto;
     margin-left: auto; */
         /* position: fixed; */

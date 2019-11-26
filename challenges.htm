@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="challenges.css">
+    <link rel="stylesheet" href="scriptfiles/fullpage.css" />
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="scriptfiles/fullpage.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navlist">
+            <li class="nav_active"><a class="active" href="index.htm">Home</a></li>
+            <li><a href="wind.htm">Wind</a></li>
+            <li><a href="solar.htm">Solar</a></li>
+            <li><a href="geo.htm">Geo-Thermal</a></li>
+            <li class="drop">
+                <a href="#support.html">Support</a>
+                <div class="dropdownContain">
+                    <div class="dropOut">
+                        <ul>
+                            <li href="#">EPA</li>
+                            <li href="#">Zoning</li>
+                            <li href="#">Home Associations</li>
+                            <li href="#">Technology</li>
+                            <li href="#">Insurance</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a href="estimator.htm">Estimator</a></li>
+        </ul>
+    </nav>
+
+    <div id="fullpage">
+
+        <div class="section s1 fp-bg">
+            <h1>challenges</h1>
+        </div>
+        <div class="section s2 ">
+            <h1>Epa</h1>
+        </div>
+        <div class="section s3 ">
+            <h1>Zoning</h1>
+        </div>
+        <div class="section s4 ">
+            <h1>home Associations</h1>
+        </div>
+        <div class="section s5 ">
+            <h1>Technology</h1>
+        </div>
+        <div class="section s6 ">
+            <h1>Insurance</h1>
+        </div>
+
+
+    </div>
+
+    <script src="scriptfiles/fullpage.js"></script>
+    <script>
+        new fullpage('#fullpage', {
+            licenseKey: '817420BB-EE5D4CD0-B46B6D0B-76C1ADA0',
+            lockAnchors: false,
+            anchors: ['1', '2', '3', '4', '5', '6'],
+            autoScrolling: true,
+            navigation: true,
+            navigationPosition: 'left',
+            navigationTooltips: ['Challenges', 'EPA', 'Zoning', 'home associations', 'techonology', 'insurance'],
+
+
+        })
+    </script>
+
+
+
+
+</body>
+
+</html>
