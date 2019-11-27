@@ -47,10 +47,11 @@
     }
     
     .heading {
-        -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
-        -ms-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
-        -moz-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
-        backdrop-filter: saturate(180%) blur(20px) brightness(50%);
+        -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(50%) !important;
+        -ms-backdrop-filter: saturate(180%) blur(20px) brightness(50%) !important;
+        /* -moz-background-color: rgba(0, 0, 0, 0.5); */
+        backdrop-filter: saturate(180%) blur(20px) brightness(50%) !important;
+        background-color: rgba(0, 0, 0, 0.5);
         box-shadow: 35px 29px 29px rgba(0, 0, 0, 0.55);
         overflow: hidden;
         width: 85%;

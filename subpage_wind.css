@@ -25,7 +25,10 @@ body {
 
 .main_text p,
 .main_text h1 {
-    color: darkgray;
+    color: white;
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
 }
 
 .main_text {
