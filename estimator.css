@@ -1,0 +1,160 @@
+#A25228 {
+    width: 70vw;
+    height: 70vh;
+    position: absolute;
+    overflow: hidden;
+    top: 10vh;
+    left: -35vw;
+    z-index: 20;
+}
+
+html {
+    overflow-y: scroll;
+    padding: 15px;
+}
+
+body {
+    margin: 0;
+}
+
+.page_content {
+    background: linear-gradient(90deg, #9ebd13 0%, #008552 100%);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    right: 0px;
+    /* padding-left: 130px; */
+    padding-top: 130px;
+    /* padding: 0px; */
+    overflow-x: hidden;
+    position: absolute;
+}
+
+
+/* .inputs {
+    /* align-content: center; 
+    left: 50%;
+    margin: 0 auto;
+} */
+
+form label,
+button {
+    top: 25%;
+    left: 175px;
+    margin-left: 15px;
+    z-index: 900;
+}
+
+button {
+    top: 30% !important;
+}
+
+.results {
+    padding-left: 200px;
+    padding-top: 50px;
+}
+
+.results p:nth-child(1),
+.results p:nth-child(2),
+.results p:nth-child(3) {
+    color: white;
+}
+
+.results p {
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2em;
+}
+
+input[type=button] {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    /* left: 200px; */
+    z-index: 900;
+    position: absolute;
+}
+
+.calc {
+    padding-top: 50px;
+    padding-left: 200px;
+    z-index: 900;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+
+.css-typing {
+    padding-left: 200px;
+}
+
+.css-typing h1 {
+    border-right: solid 3px orange;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 28px;
+    color: rgba(255, 255, 255, .70);
+}
+
+
+/* Animation */
+
+h1 {
+    animation: animated-text 4s steps(25, end) 1s 1 normal both, animated-cursor 600ms steps(25, end) infinite;
+}
+
+
+/* text animation */
+
+@keyframes animated-text {
+    from {
+        width: 0;
+    }
+    to {
+        width: 390px;
+    }
+}
+
+
+/* cursor animations */
+
+@keyframes animated-cursor {
+    from {
+        border-right-color: orange
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+
+.matter-textfield-outlined {
+    --matter-helper-theme: rgb(var(--matter-theme-rgb, var(--matter-primary-rgb, 255, 255, 255))) !important;
+    --matter-helper-safari1: rgba(var(--matter-onsurface-rgb, 255, 255, 255), 0.38) !important;
+    --matter-helper-safari2: rgba(var(--matter-onsurface-rgb, 255, 255, 255), 0.6) !important;
+    --matter-helper-safari3: rgba(var(--matter-onsurface-rgb, 255, 255, 255), 0.87) !important;
+}

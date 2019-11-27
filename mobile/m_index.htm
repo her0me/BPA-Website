@@ -122,7 +122,7 @@
             lockAnchors: false,
             anchors: ['1', '2', '3', '4', '5'],
             autoScrolling: true,
-            navigation: true,
+            navigation: false,
             navigationPosition: 'left',
             navigationTooltips: ['Energy matters _', 'Wind', 'Solar', 'Geo-Thermal', 'Challenges'],
         })
@@ -135,6 +135,12 @@
 
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+    <script type="text/javascript">
+        if (screen.width >= 699) {
+            document.location = "../index.htm";
         }
     </script>
 
