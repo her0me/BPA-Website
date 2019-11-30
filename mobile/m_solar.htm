@@ -3,60 +3,31 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Untitled Document</title>
-    <link href="subpage_wind.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="navigation.css" />
+    <link href="css_files/m_subpage.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css_files/m_navigation.css" />
 </head>
 
 <body>
     <!-- start of navigation-->
-    <nav class="navbar">
-        <ul class="navlist">
-            <li><a href="index.htm">Home</a></li>
-            <li><a href="wind.htm">Wind</a></li>
-            <li class="nav_active"><a class="active" href="solar.htm">Solar</a></li>
-            <li><a href="geo.htm">Geo-Thermal</a></li>
-            <li class="drop">
-                <a href="challenges.htm">Support</a>
-                <div class="dropdownContain">
-                    <div class="dropOut">
-                        <ul>
-                            <a href="challenges.htm#2">
-                                <li>EPA</li>
-                            </a>
-                            <a href="challenges.htm#3">
-                                <li>Zoning</li>
-                            </a>
-                            <a href="challenges.htm#4">
-                                <li>Home Associations</li>
-                            </a>
-                            </a>
-                            <a href="challenges.htm#5">
-                                <li>Technology
-                                </li>
-                            </a>
-                            <a href="challenges.htm#6">
-                                <li>Insurance
-                                </li>
-                            </a>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <li><a href="estimator.htm">Estimator</a></li>
-        </ul>
-    </nav>
+    <div class="navigation">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <!-- close end -->
+            <a href="m_index.htm">HOME</a>
+            <a class="present" href="m_solar.htm">SOLAR</a>
+            <a href="m_wind.htm">WIND</a>
+            <a href="m_geo.htm">GEOTHEMAL</a>
+            <a href="m_challenges.htm">CHALLENGES</a>
+            <a href="m_estimator.htm">ESITMATOR</a>
+        </div>
+
+        <span onclick="openNav()"> &#9776; </span>
+    </div>
     <!--navigation end-->
     <div class="page_Content">
 
-        <div class="heading">
-            <svg class="borderLayout">
-      <rect fill="rgba(255,255,255,1)" class="Rectangle_11_Class"  width="506" height="336" > </rect>
-    </svg>
-            <div class="heading_txt"> <span>Solar Energy <br/>
-        Matters<br/>
-        _</span> </div>
-        </div>
         <div class="main_text">
             <h1>
                 Solar Power Energy Background and Basics
@@ -124,9 +95,19 @@
       <stop offset="0" stop-color="#e34c25" stop-opacity="1"></stop>
       <stop offset="1" stop-color="#afb434" stop-opacity="1"></stop>
     </lineargradient>
-    <rect fill="url(#LinearGradientFill1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" class="Rectangle_3_Class" width="100vw" height="150vh"> </rect>
+    <rect fill="url(#LinearGradientFill1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" class="Rectangle_3_Class" width="100vw" height="290vh"> </rect>
   </svg>
     </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 
 
 </body>

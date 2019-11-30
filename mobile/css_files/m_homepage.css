@@ -1,41 +1,75 @@
     #home-image {
-        background-image: url("Images_cr/alternative-energy-clouds-efficiency-414837.jpg");
+        background-image: url("../Images_cr/alternative-energy-clouds-efficiency-414837.jpg");
         height: 70vh;
         background-size: auto 70vh;
         background-repeat: no-repeat;
     }
     
     .s2 {
-        background-image: url(Images_cr/alternative-alternative-energy-electricity-1292464.jpg);
+        background-image: url("../Images_cr/alternative-alternative-energy-electricity-1292464.jpg");
         height: 70vh;
         background-size: auto 70vh;
         background-repeat: no-repeat;
     }
     
     .s3 {
-        background-image: url(Images_cr/bird-s-eye-view-of-solar-panel-roof-1907419.jpg);
+        background-image: url("../Images_cr/bird-s-eye-view-of-solar-panel-roof-1907419.jpg");
         height: 70vh;
         background-size: auto 70vh;
         background-repeat: no-repeat;
     }
     
     .s4 {
-        background-image: url(images/place\ holder.jpg);
+        background-image: url("../images/place\ holder.jpg");
         height: 70vh;
         background-size: auto 70vh;
         background-repeat: no-repeat;
     }
     
     .s5 {
-        background-image: url(images/place\ holder.jpg);
+        background-image: url("../Images_cr/place\ holder.jpg");
         height: 70vh;
         background-size: auto 70vh;
         background-repeat: no-repeat;
     }
     
+    .s6 {
+        background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    }
+    
+    .s6 .fp-tableCell {
+        text-align: center;
+        vertical-align: middle !important;
+    }
+    
+    .s6 h1,
+    .s6 p {
+        font-family: Rockwell;
+        font-style: normal;
+        font-weight: normal;
+        color: white;
+    }
+    
     .home_txt p {
         text-align: center;
         margin-bottom: 10vh;
+    }
+    
+    input[type=button] {
+        background-color: rgba(0, 0, 0, 0.2);
+        border: none;
+        color: white;
+        ;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        /* left: 200px; */
+        z-index: 900;
+        font-family: Rockwell;
+        font-style: normal;
+        font-weight: normal;
+        text-transform: uppercase;
     }
     
     .fp-tableCell {

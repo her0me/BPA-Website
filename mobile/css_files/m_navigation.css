@@ -21,7 +21,7 @@
     transition: 0.5s;
     padding-top: 60px;
     text-align: center;
-    z-index: 900;
+    z-index: 990;
 }
 
 .sidenav a {
@@ -30,12 +30,16 @@
     color: #ffffff;
     display: block;
     transition: 0.3s;
-    z-index: 950;
+    z-index: 995;
     font-family: Rockwell;
     font-size: 30px;
     font-style: normal;
     font-weight: normal;
     letter-spacing: -0.27px;
+}
+
+.present {
+    text-decoration: underline !important;
 }
 
 

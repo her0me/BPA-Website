@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css_files/m_challenges.css">
+    <link rel="stylesheet" href="scriptfiles/fullpage.css" />
+    <link rel="stylesheet" href="css_files/m_navigation.css">
+    <link rel="text/javascript" href="scriptfiles/fullpage.js">
+    <link rel="text/javascript" href="scriptfiles/navigation.js">
+</head>
+
+<body>
+    <!-- start of navigation  -->
+    <div class="navigation">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <!-- close end -->
+            <a href="m_index.htm">HOME</a>
+            <a href="m_solar.htm">SOLAR</a>
+            <a href="m_wind.htm">WIND</a>
+            <a href="m_geo.htm">GEOTHEMAL</a>
+            <a class="present" href="m_challenges.htm">CHALLENGES</a>
+            <a href="m_estimator.htm">ESITMATOR</a>
+        </div>
+
+        <span onclick="openNav()"> &#9776; </span>
+    </div>
+    <!-- end of navigation -->
+
+    <div id="fullpage">
+
+        <div class="section s1 fp-bg">
+            <h1>challenges</h1>
+            <p>njljnjlnjljnljnljjllnjljljlljnnjl</p>
+        </div>
+        <div class="section s2 ">
+            <h1>Epa</h1>
+            <p></p>
+        </div>
+        <div class="section s3 ">
+            <h1>Zoning</h1>
+            <p></p>
+        </div>
+        <div class="section s4 ">
+            <h1>home<br> Associations</h1>
+            <p></p>
+        </div>
+        <div class="section s5 ">
+            <h1>Technology</h1>
+            <p></p>
+        </div>
+        <div class="section s6 ">
+            <h1>Insurance</h1>
+            <p></p>
+        </div>
+
+
+    </div>
+
+    <script src="scriptfiles/fullpage.js"></script>
+    <script>
+        new fullpage('#fullpage', {
+            licenseKey: '817420BB-EE5D4CD0-B46B6D0B-76C1ADA0',
+            lockAnchors: false,
+            anchors: ['1', '2', '3', '4', '5', '6'],
+            autoScrolling: true,
+            navigation: false,
+            navigationPosition: 'left',
+            navigationTooltips: ['Challenges', 'EPA', 'Zoning', 'home associations', 'techonology', 'insurance'],
+
+
+        })
+    </script>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
