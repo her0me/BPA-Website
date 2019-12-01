@@ -69,6 +69,10 @@ fp-bg {
     text-align: center;
 }
 
+.s6 h1 {
+    font: 3vh;
+}
+
 .s6 h1,
 .s6 p {
     font-family: Rockwell;
