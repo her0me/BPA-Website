@@ -70,7 +70,7 @@ fp-bg {
 }
 
 .s6 h1 {
-    font: 3vh;
+    font: 3vh !important;
 }
 
 .s6 h1,
