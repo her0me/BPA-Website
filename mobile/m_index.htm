@@ -12,10 +12,24 @@
 
     <title>Document</title>
 
+    <style>
+        @media only screen and (orientation:landscape) {
+            body {
+                height: 100vw;
+                transform: rotate(90deg);
+            }
+        }
+    </style>
+
+    <script>
+        screen.orientation.lock(orientation);
+    </script>
+
     <link rel="stylesheet" href="scriptfiles/fullpage.css">
-    <link rel="stylesheet" href="m_homepage.css" />
+    <link rel="stylesheet" href="css_files/m_homepage.css" />
     <link rel="stylesheet" href="scriptfiles/fullpage.js" />
-    <link rel="stylesheet" href="m_navigation.css" />
+    <link rel="stylesheet" href="css_files/m_navigation.css" />
+    <link href="https://res.cloudinary.com/finnhvman/raw/upload/matter/matter-0.2.2.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -23,11 +37,12 @@
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <!-- close end -->
-            <a href="#">SOLAR</a>
-            <a href="#">WIND</a>
-            <a href="#">([[OTHERS]])</a>
-            <a href="#">REGULATIONS</a>
-            <a href="#">ESITMATOR</a>
+            <a class="present" href="m_index.htm">HOME</a>
+            <a href="m_solar.htm">SOLAR</a>
+            <a href="m_wind.htm">WIND</a>
+            <a href="m_geo.htm">GEOTHEMAL</a>
+            <a href="m_challenges.htm">CHALLENGES</a>
+            <a href="m_estimator.htm">ESITMATOR</a>
         </div>
 
         <span onclick="openNav()"> &#9776; </span>
@@ -88,8 +103,7 @@
             <div class="heading">
                 <div class="Rectangle_5"></div>
                 <div class="heading_txt">
-                    <section>Geo-Thermal<br/> Energy Matters
-                        <br/> _
+                    <section>Geo-Thermal<br/> Energy <br> Matters _
                     </section>
                 </div>
             </div>
@@ -114,13 +128,42 @@
             </div>
         </div>
 
+        <div class="section s6">
+            <!-- work sited orginizations newsletter contact us -->
+
+            <h1>get in touch with us</h1>
+            <p>sign up for our newsletter</p>
+            <form class="r1">
+                <div class="txtbox">
+                    <label class="matter-textfield-outlined">
+                        <input placeholder=" "  type="text" id="usage">
+                        <span>Name</span>
+                    </label>
+                </div>
+                <div class="txtbox">
+                    <label class="matter-textfield-outlined">
+                        <input placeholder=" "  type="text" id="usage">
+                        <span>E-Mail</span>
+                    </label>
+                </div>
+
+                <input type="button" Value="send!" />
+
+            </form>
+
+            <form class="route">
+                <a href="cited.htm"><input type="button" Value="view worksited" /></a>
+                <a href="#"><input type="button" Value="about us!" /></a>
+            </form>
+        </div>
+
     </div>
 
     <script src="scriptfiles/fullpage.js"></script>
     <script>
         new fullpage('#fullpage', {
             lockAnchors: false,
-            anchors: ['1', '2', '3', '4', '5'],
+            anchors: ['1', '2', '3', '4', '5', '6'],
             autoScrolling: true,
             navigation: false,
             navigationPosition: 'left',

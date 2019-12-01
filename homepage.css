@@ -26,6 +26,13 @@ fp-bg {
     width: 100%;
 }
 
+.info p {
+    font-size: 1.25em;
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+}
+
 .s1 {
     top: 0;
     left: 0;
@@ -50,8 +57,86 @@ fp-bg {
 }
 
 .s5 {
-    background-image: url(images/place\ holder.jpg);
+    background-image: url(Images_cr/place\ holder.jpg);
     background-size: cover;
+}
+
+.s6 {
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+
+.s6 {
+    text-align: center;
+}
+
+.s6 h1,
+.s6 p {
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+}
+
+.txtbox {
+    padding-bottom: 15px;
+}
+
+.r1 {
+    display: inline;
+}
+
+.route {
+    padding: 15px;
+}
+
+.s6 input[type=button] {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    color: white;
+    ;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    /* left: 200px; */
+    z-index: 900;
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.s1 input[type=button],
+.s2 input[type=button],
+.s3 input[type=button],
+.s4 input[type=button],
+.s5 input[type=button] {
+    -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(60%) !important;
+    -ms-backdrop-filter: saturate(180%) blur(20px) brightness(60%) !important;
+    -o-backdrop-filter: saturate(180%) blur(20px) brightness(60%) !important;
+    backdrop-filter: saturate(180%) blur(20px) brightness(60%) !important;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    border-style: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    /* left: 200px; */
+    z-index: 900;
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2vw;
+    text-transform: uppercase;
+    right: 27%;
+    top: 80%;
+    position: absolute;
+    /* box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.486); */
+}
+
+.route a {
+    padding-left: 15px;
 }
 
 #fp-nav ul li a span {
@@ -87,6 +172,8 @@ fp-bg {
     right: 0;
     overflow: visible;
     -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(60%);
+    -ms-backdrop-filter: saturate(180%) blur(20px) brightness(60%);
+    -o-backdrop-filter: saturate(180%) blur(20px) brightness(60%);
     backdrop-filter: saturate(180%) blur(20px) brightness(60%);
     /* backdrop-filter: blur(5px);
     backdrop-filter: brightness(60%); */
@@ -139,16 +226,71 @@ fp-bg {
     /* -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(50%);*/
     /* backdrop-filter: saturate(180%) blur(20px) brightness(50%); */
     -ms-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
-    /* -moz-: ; */
     -o-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
     -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
     backdrop-filter: saturate(180%) blur(20px) brightness(50%);
+    /* background-color: rgba(0, 0, 0, 0.7); */
     overflow: visible;
     width: 592px;
     height: 336px;
     top: 0;
     left: 0;
     z-index: 600;
+}
+
+
+/* code just for mozilla since backdrop isnt added */
+
+@-moz-document url-prefix() {
+    .Rectangle_5 {
+        /* -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(50%);*/
+        /* backdrop-filter: saturate(180%) blur(20px) brightness(50%); */
+        /* -ms-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
+        -o-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
+        -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
+        backdrop-filter: saturate(180%) blur(20px) brightness(50%); */
+        background-color: rgba(0, 0, 0, 0.7);
+        overflow: visible;
+        width: 592px;
+        height: 336px;
+        top: 0;
+        left: 0;
+        z-index: 600;
+    }
+    .sidebar {
+        height: 100vh;
+        width: 32%;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        overflow: visible;
+        /* -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(60%);
+        -ms-backdrop-filter: saturate(180%) blur(20px) brightness(60%);
+        -o-backdrop-filter: saturate(180%) blur(20px) brightness(60%);
+        backdrop-filter: saturate(180%) blur(20px) brightness(60%); */
+        /* backdrop-filter: blur(5px);
+        backdrop-filter: brightness(60%); */
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}
+
+@supports (-ms-ime-align:auto) {
+    .Rectangle_5 {
+        /* -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(50%);*/
+        /* backdrop-filter: saturate(180%) blur(20px) brightness(50%); */
+        /* -ms-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
+        -o-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
+        -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
+        backdrop-filter: saturate(180%) blur(20px) brightness(50%); */
+        background-color: rgba(0, 0, 0, 0.7);
+        overflow: visible;
+        width: 592px;
+        height: 336px;
+        top: 0;
+        left: 0;
+        z-index: 600;
+    }
 }
 
 .siderect1 {
@@ -236,4 +378,20 @@ fp-bg {
     100% {
         opacity: 0;
     }
+}
+
+
+/* ______________________________________________________________________________ */
+
+
+/* ______________________________________________________________________________ */
+
+
+/* ______________________________________________________________________________ */
+
+.matter-textfield-outlined {
+    --matter-helper-theme: rgb(var(--matter-theme-rgb, var(--matter-primary-rgb, 255, 255, 255))) !important;
+    --matter-helper-safari1: rgba(var(--matter-onsurface-rgb, 255, 255, 255), 0.38) !important;
+    --matter-helper-safari2: rgba(var(--matter-onsurface-rgb, 255, 255, 255), 0.6) !important;
+    --matter-helper-safari3: rgba(var(--matter-onsurface-rgb, 255, 255, 255), 0.87) !important;
 }

@@ -14,7 +14,7 @@
     height: 100%;
     padding: 0 0 0 0;
     background-size: cover;
-    background-image: url(Images_cr/5c289afb9a15752f8f893a27_05.\ Flax.jpg);
+    background-image: url("../Images_cr/5c289afb9a15752f8f893a27_05.\ Flax.jpg");
 }
 
 .s2 {
@@ -50,7 +50,7 @@ h1 {
     font-family: Rockwell;
     font-style: normal;
     font-weight: normal;
-    font-size: 5rem;
+    font-size: 17vw;
     color: rgb(255, 255, 255);
     letter-spacing: -0.27px;
 }

@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="navigation.css" />
-    <link rel="stylesheet" href="estimator.css" />
+    <link rel="stylesheet" href="css_files/m_navigation.css" />
+    <link rel="stylesheet" href="css_files/m_estimator.css" />
     <link href="https://res.cloudinary.com/finnhvman/raw/upload/matter/matter-0.2.2.min.css" rel="stylesheet">
     <link rel="text/javascript" href="scriptfiles/lazy-line-painter-1.9.6.min.js" />
 </head>
@@ -22,45 +22,20 @@
 </svg>
 
     <!-- start of navigation-->
-    <nav class="navbar">
-        <ul class="navlist">
-            <li class="nav_active"><a href="index.htm">Home</a></li>
-            <li><a href="wind.htm">Wind</a></li>
-            <li><a href="solar.htm">Solar</a></li>
-            <li><a href="geo.htm">Geo-Thermal</a></li>
-            <li class="drop">
-                <a href="challenges.htm">Challenges</a>
-                <div class="dropdownContain">
-                    <div class="dropOut">
-                        <div class="triangle"></div>
-                        <ul>
-                            <a href="challenges.htm#2">
-                                <li>EPA</li>
-                            </a>
-                            
-                            <a href="challenges.htm#3">
-                                <li>Zoning</li>
-                            </a>
-                            
-                            <a href="challenges.htm#4">
-                                <li>Home Associations</li>
-                            </a>
-                            
-                            <a href="challenges.htm#5">
-                                <li>Technology</li>
-                            </a>
-                            
-                            <a href="challenges.htm#6">
-                                <li>Insurance</li>
-                            </a>
-                            
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <li><a class="active" href="estimator.htm">Estimator</a></li>
-        </ul>
-    </nav>
+    <div class="navigation">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <!-- close end -->
+            <a class="present" href="m_index.htm">HOME</a>
+            <a href="m_solar.htm">SOLAR</a>
+            <a href="m_wind.htm">WIND</a>
+            <a href="m_geo.htm">GEOTHEMAL</a>
+            <a href="m_challenges.htm">CHALLENGES</a>
+            <a class="present" href="m_estimator.htm">ESITMATOR</a>
+        </div>
+
+        <span onclick="openNav()"> &#9776; </span>
+    </div>
     <!--navigation end-->
     <div class="page_content">
 
@@ -193,10 +168,16 @@
 
             }
         </script>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "100%";
+            }
 
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
 
-
-        <!-- </<button> -->
 </body>
 
 </html>
