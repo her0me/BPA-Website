@@ -61,9 +61,10 @@ h1 {
 
 .main_text {
     position: relative;
-    z-index: 999;
+    z-index: 650;
     padding-right: 75px;
     padding-left: 75px;
+    padding-top: 10vh;
 }
 
 .Rectangle_3 {
