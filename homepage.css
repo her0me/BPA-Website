@@ -223,10 +223,6 @@ fp-bg {
     position: fixed;
     z-index: 605;
     padding-right: 18px;
-    /* -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
-    -ms-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
-    -moz-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
-    backdrop-filter: saturate(180%) blur(20px) brightness(50%); */
 }
 
 .Rectangle_5 {
@@ -329,13 +325,13 @@ fp-bg {
     position: absolute;
     top: 0;
     left: 50%;
-    width: 30px;
-    height: 50px;
+    width: 60px;
+    height: 100px;
     margin-left: -15px;
     border: 2px solid #fff;
     border-radius: 50px;
     box-sizing: border-box;
-    margin-top: 23px;
+    margin-top: -35px;
 }
 
 .scroll a span::before {
