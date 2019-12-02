@@ -52,14 +52,15 @@ fp-bg {
 }
 
 .s4 {
-    background-image: url(Images_cr/agriculture-basil-bunch-cultivation-348689.jpg);
+    background-image: url(Images_cr/home-real-estate-106399.jpg);
     background-size: cover;
 }
 
-.s5 {
+
+/* .s5 {
     background-image: url(Images_cr/place\ holder.jpg);
     background-size: cover;
-}
+} */
 
 .s6 {
     background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
@@ -104,6 +105,7 @@ fp-bg {
     cursor: pointer;
     /* left: 200px; */
     z-index: 900;
+    font-size: 2vw;
     font-family: Rockwell;
     font-style: normal;
     font-weight: normal;
@@ -112,13 +114,12 @@ fp-bg {
 .s1 input[type=button],
 .s2 input[type=button],
 .s3 input[type=button],
-.s4 input[type=button],
-.s5 input[type=button] {
-    -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(60%) !important;
-    -ms-backdrop-filter: saturate(180%) blur(20px) brightness(60%) !important;
-    -o-backdrop-filter: saturate(180%) blur(20px) brightness(60%) !important;
-    backdrop-filter: saturate(180%) blur(20px) brightness(60%) !important;
-    background-color: rgba(0, 0, 0, 0);
+.s4 input[type=button] {
+    -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(70%) !important;
+    -ms-backdrop-filter: saturate(180%) blur(20px) brightness(70%) !important;
+    -o-backdrop-filter: saturate(180%) blur(20px) brightness(70%) !important;
+    backdrop-filter: saturate(180%) blur(20px) brightness(70%) !important;
+    background-color: rgba(0, 0, 0, 0.2);
     color: white;
     padding: 16px 32px;
     text-decoration: none;
@@ -135,6 +136,10 @@ fp-bg {
     top: 80%;
     position: absolute;
     /* box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.486); */
+}
+
+.s6 h1 {
+    font-size: 2.3vw;
 }
 
 .route a {
