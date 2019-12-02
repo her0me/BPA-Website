@@ -15,10 +15,10 @@ html {
 
 body {
     margin: 0;
+    background: linear-gradient(90deg, #9ebd13 0%, #008552 100%);
 }
 
 .page_content {
-    background: linear-gradient(90deg, #9ebd13 0%, #008552 100%);
     background-size: cover;
     width: 100vw;
     height: 100vh;
