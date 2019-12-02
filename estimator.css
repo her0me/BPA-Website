@@ -60,7 +60,7 @@ button {
 .results p:nth-child(2),
 .results p:nth-child(3) {
     color: white;
-    font-size: 0.75em;
+    font-size: 1.1em;
 }
 
 .results p {
@@ -89,9 +89,14 @@ input[type=button] {
     z-index: 900;
 }
 
-span {
+.headin {
     font-size: 0.8vw !important;
 }
+
+
+/* .txt_result {
+    font-size: 2em;
+} */
 
 
 /* -------------------------------------------------------------------------------------------------------------------------------------- */
