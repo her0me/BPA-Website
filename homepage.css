@@ -52,14 +52,15 @@ fp-bg {
 }
 
 .s4 {
-    background-image: url(Images_cr/agriculture-basil-bunch-cultivation-348689.jpg);
+    background-image: url(Images_cr/home-real-estate-106399.jpg);
     background-size: cover;
 }
 
-.s5 {
+
+/* .s5 {
     background-image: url(Images_cr/place\ holder.jpg);
     background-size: cover;
-}
+} */
 
 .s6 {
     background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
