@@ -223,10 +223,6 @@ fp-bg {
     position: fixed;
     z-index: 605;
     padding-right: 18px;
-    /* -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
-    -ms-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
-    -moz-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
-    backdrop-filter: saturate(180%) blur(20px) brightness(50%); */
 }
 
 .Rectangle_5 {
