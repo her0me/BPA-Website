@@ -28,7 +28,7 @@
             <li class="nav_active"><a href="index.htm">Home</a></li>
             <li><a href="wind.htm">Wind</a></li>
             <li><a href="solar.htm">Solar</a></li>
-            <li><a href="geo.htm">Geo-Thermal</a></li>
+            <li><a href="geo.htm">Geothermal</a></li>
             <li><a class="active" href="estimator.htm">Estimator</a></li>
         </ul>
     </nav>
@@ -70,13 +70,13 @@
         <section class="results">
             <p>*costs may vary</p>
             <p>**average american household uses about 1000KWH per month</p>
-            <p>***calculate for 20 yrs</p>
+            <p>***calculated based on 20 yrs</p>
 
-            <p>cost per month: <span id="cost_per_month"><br></span></p>
+            <p>Cost per month: <span id="cost_per_month"><br></span></p>
             <!-- <span id="cost"></span> -->
             <p>Estimated upfront costs: <span id="upfront_cost"></span><br></p>
-            <p>time untill Payback: <span id="time_payback"></span><br></p>
-            <p>savings: <span id="saving"></span><br></p>
+            <p>Time untill Payback: <span id="time_payback"></span><br></p>
+            <p>Savings: <span id="saving"></span><br></p>
             <p>Carbon dioxide emissions: <span id="co2_emissions_saved"></span><br></p>
             <p>Sulfur dioxide emissions: <span id="so2_emissions_saved"></span><br></p>
             <p>Nitric oxide emissions: <span id="no_emissions_saved"></span><br></p>
@@ -116,11 +116,11 @@
 
             })();
         </script>
-        <!-- animantiona end -->
+        <!-- animantion end -->
         <!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
         <script>
             function calculate() {
-
+                kWH_usage = 1000;
                 kWH_usage = document.getElementById("usage").value;
                 cPM = document.getElementById("cost").value;
 

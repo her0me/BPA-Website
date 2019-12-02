@@ -53,6 +53,7 @@ button {
 .results {
     padding-left: 200px;
     padding-top: 50px;
+    font-size: 12px;
 }
 
 .results p:nth-child(1),

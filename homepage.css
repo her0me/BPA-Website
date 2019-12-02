@@ -107,7 +107,6 @@ fp-bg {
     font-family: Rockwell;
     font-style: normal;
     font-weight: normal;
-    text-transform: uppercase;
 }
 
 .s1 input[type=button],
@@ -132,7 +131,6 @@ fp-bg {
     font-style: normal;
     font-weight: normal;
     font-size: 2vw;
-    text-transform: uppercase;
     right: 27%;
     top: 80%;
     position: absolute;
