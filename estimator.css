@@ -4,12 +4,12 @@
     position: absolute;
     overflow: hidden;
     top: 10vh;
-    left: -35vw;
+    left: 35vw;
     z-index: 20;
 }
 
 html {
-    overflow-y: scroll;
+    overflow-x: hidden;
     padding: 15px;
 }
 
@@ -87,6 +87,10 @@ input[type=button] {
     padding-top: 50px;
     padding-left: 200px;
     z-index: 900;
+}
+
+span {
+    font-size: 0.8vw !important;
 }
 
 
