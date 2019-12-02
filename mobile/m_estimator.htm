@@ -82,7 +82,9 @@
             <p>Estimated upfront costs: <span id="upfront_cost"></span><br></p>
             <p>time untill Payback: <span id="time_payback"></span><br></p>
             <p>savings: <span id="saving"></span><br></p>
-            <p>co2 emissions: <span id="co2_emissions_saved"></span><br></p>
+            <p>Carbon dioxide emissions: <span id="co2_emissions_saved"></span><br></p>
+            <p>Sulfur dioxide emissions: <span id="so2_emissions_saved"></span><br></p>
+            <p>Nitric oxide emissions: <span id="no_emissions_saved"></span><br></p>
         </section>
 
 
@@ -146,7 +148,10 @@
 
                 var Savings = Cost_20Yrs - Cost_PP;
                 var electricityProduced = kWH_usage * 12 * 20;
-                var savedEmisssion = Math.round(electricityProduced * 0.45);
+                var co2_savedEmisssion = Math.round(electricityProduced * 0.95);
+                var so2_savedEmisssion = Math.round(electricityProduced * 0.0072);
+                var no_savedEmisssion = Math.round(electricityProduced * 0.0045);
+
 
 
 
@@ -156,7 +161,9 @@
 
                 document.getElementById("cost_per_month").innerHTML = " $ " + Math.round(Cost_PP / (20 * 12));
                 document.getElementById("saving").innerHTML = " $ " + Savings;
-                document.getElementById("co2_emissions_saved").innerHTML = savedEmisssion + " Kg saved";
+                document.getElementById("co2_emissions_saved").innerHTML = co2_savedEmisssion + " Kg saved";
+                document.getElementById("so2_emissions_saved").innerHTML = so2_savedEmisssion + " kg saved";
+                document.getElementById("no_emissions_saved").innerHTML = no_savedEmisssion + " Kg saved";
                 document.getElementById("upfront_cost").innerHTML = " $ " + Cost_PP;
                 document.getElementById("time_payback").innerHTML = Math.floor(Cost_PP / (cPM * 12)) + " Years";
 
