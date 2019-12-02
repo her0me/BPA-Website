@@ -4,12 +4,12 @@
     position: absolute;
     overflow: hidden;
     top: 10vh;
-    left: -35vw;
+    left: 35vw;
     z-index: 20;
 }
 
 html {
-    overflow-y: scroll;
+    overflow-x: hidden;
     padding: 15px;
 }
 
@@ -88,6 +88,15 @@ input[type=button] {
     padding-left: 200px;
     z-index: 900;
 }
+
+.headin {
+    font-size: 0.8vw !important;
+}
+
+
+/* .txt_result {
+    font-size: 2em;
+} */
 
 
 /* -------------------------------------------------------------------------------------------------------------------------------------- */
