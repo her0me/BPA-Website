@@ -20,7 +20,14 @@
     }
     
     .s4 {
-        background-image: url("../Images_cr/home-real-estate-106399.jpg");
+        background-image: url("../images/place\ holder.jpg");
+        height: 70vh;
+        background-size: auto 70vh;
+        background-repeat: no-repeat;
+    }
+    
+    .s5 {
+        background-image: url("../Images_cr/place\ holder.jpg");
         height: 70vh;
         background-size: auto 70vh;
         background-repeat: no-repeat;
@@ -46,17 +53,6 @@
     .home_txt p {
         text-align: center;
         margin-bottom: 10vh;
-    }
-    
-    .s1 input[type=button],
-    .s2 input[type=button],
-    .s3 input[type=button],
-    .s4 input[type=button] {
-        position: absolute;
-        bottom: 1%;
-        left: 25%;
-        width: 50%;
-        background-color: rgba(0, 0, 0, 0.6);
     }
     
     input[type=button] {
