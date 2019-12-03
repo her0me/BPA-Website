@@ -238,6 +238,7 @@ fp-bg {
     height: 336px;
     top: 0;
     left: 0;
+    /* //coment */
     z-index: 600;
 }
 
