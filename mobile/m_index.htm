@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" href="scriptfiles/fullpage.css">
     <link rel="stylesheet" href="css_files/m_homepage.css" />
-    <link rel="stylesheet" href="scriptfiles/fullpage.js" />
+    <link rel="text/javascript" href="scriptfiles/fullpage.js" />
     <link rel="stylesheet" href="css_files/m_navigation.css" />
     <link href="https://res.cloudinary.com/finnhvman/raw/upload/matter/matter-0.2.2.min.css" rel="stylesheet">
 </head>
@@ -26,12 +26,12 @@
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <!-- close end -->
-            <a class="present" href="m_index.htm">HOME</a>
-            <a href="m_solar.htm">SOLAR</a>
-            <a href="m_wind.htm">WIND</a>
-            <a href="m_geo.htm">GEOTHEMAL</a>
-            <a href="m_challenges.htm">CHALLENGES</a>
-            <a href="m_estimator.htm">ESITMATOR</a>
+            <a class="present" href="m_index.htm">Home</a>
+            <a href="m_solar.htm">Solar</a>
+            <a href="m_wind.htm">Wind</a>
+            <a href="m_geo.htm">Geothemal</a>
+            <a href="m_estimator.htm">Cost Savings Calculator</a>
+            <a href="m_about.htm">About us</a>
         </div>
 
         <span onclick="openNav()"> &#9776; </span>
@@ -52,7 +52,7 @@
             <div class="home_txt">
                 <p> Start your bio-friendly home today by implementing clean energy sources! Learn how wind, solar, and geothermal energy can be reusable and help the environment. </p>
             </div>
-
+            <a href="m_about.htm"> <input type="button" Value="About Us" /></a>
         </div>
         <!-- /////////////////////////////////////////////////////////////// -->
 
@@ -69,6 +69,7 @@
             <div class="home_txt">
                 <p> Wind energy usage in the United States has TRIPLED in the past decade! It is the most effective clean energy source. See if your property is compatible with a wind turbine. </p>
             </div>
+            <a href="m_wind.htm"><input type="button" Value="More info" /></a>
         </div>
         <!-- /////////////////////////////////////////////////////////////// -->
 
@@ -85,6 +86,7 @@
             <div class="home_txt">
                 <p> The sun is the strongest energy source in the universe. Explore how it can contribute to usable energy! Where will you put your solar panel? </p>
             </div>
+            <a href="m_solar.htm"><input type="button" Value="More info" /></a>
         </div>
         <!-- /////////////////////////////////////////////////////////////// -->
 
@@ -99,50 +101,19 @@
             <div class="home_txt">
                 <p> The exchange of heat in your house with the energy found under ground! </p>
             </div>
+            <a href="m_geo.htm"> <input type="button" Value="More info" /> </a>
         </div>
         <!-- /////////////////////////////////////////////////////////////// -->
-
-        <div class="section s5">
-            <div class="heading">
-                <div class="Rectangle_5"></div>
-                <div class="heading_txt">
-                    <section>regulation
-                        <br/> Matters
-                        <br/> _
-                    </section>
-                </div>
-            </div>
-            <div class="home_txt">
-                <p> Every energy source poses various challenges. Learn more about EPA, zoning, and other regulations for energy usage in households. </p>
-            </div>
-        </div>
-
         <div class="section s6">
             <!-- work sited orginizations newsletter contact us -->
 
-            <h1>get in touch with us</h1>
-            <p>sign up for our newsletter</p>
-            <form class="r1">
-                <div class="txtbox">
-                    <label class="matter-textfield-outlined">
-                        <input placeholder=" "  type="text" id="usage">
-                        <span>Name</span>
-                    </label>
-                </div>
-                <div class="txtbox">
-                    <label class="matter-textfield-outlined">
-                        <input placeholder=" "  type="text" id="usage">
-                        <span>E-Mail</span>
-                    </label>
-                </div>
+            <h1>Get To Know Us</h1>
 
-                <input type="button" Value="send!" />
-
-            </form>
 
             <form class="route">
-                <a href="cited.htm"><input type="button" Value="view worksited" /></a>
-                <a href="#"><input type="button" Value="about us!" /></a>
+                <a href="m_cited.htm"><input type="button" Value="View Works Cited" /></a>
+                <a href="m_about.htm"><input type="button" Value="About Us" /></a>
+                <a href="m_estimator.htm"><input type="button" Value="Cost Savings Calculator" /></a>
             </form>
         </div>
 
@@ -171,11 +142,6 @@
         }
     </script>
 
-    <script type="text/javascript">
-        if (screen.width >= 699) {
-            document.location = "../index.htm";
-        }
-    </script>
     <script type="text/javascript">
         if (screen.width >= 699) {
             document.location = "../index.htm";
