@@ -27,7 +27,7 @@ fp-bg {
 }
 
 .info p {
-    font-size: 1.25em;
+    font-size: 1.7vw;
     font-family: Rockwell;
     font-style: normal;
     font-weight: normal;
@@ -215,7 +215,7 @@ fp-bg {
     font-family: Rockwell;
     font-style: normal;
     font-weight: normal;
-    font-size: 5rem;
+    font-size: 5.6vw;
     color: rgb(255, 255, 255);
     letter-spacing: -0.27px;
     margin-top: 35px;
@@ -234,8 +234,8 @@ fp-bg {
     backdrop-filter: saturate(180%) blur(20px) brightness(50%);
     /* background-color: rgba(0, 0, 0, 0.7); */
     overflow: visible;
-    width: 592px;
-    height: 336px;
+    width: 41vw;
+    height: 37vh;
     top: 0;
     left: 0;
     z-index: 600;
