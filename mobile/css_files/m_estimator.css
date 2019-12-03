@@ -46,6 +46,17 @@ button {
     z-index: 900;
 }
 
+form p {
+    top: 25%;
+    padding-left: 185px;
+    margin-left: 15px;
+    z-index: 900;
+    color: white;
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+}
+
 button {
     top: 30% !important;
 }
@@ -101,7 +112,7 @@ input[type=button] {
 /* -------------------------------------------------------------------------------------------------------------------------------------- */
 
 .css-typing {
-    padding-left: 15px;
+    padding-left: 90px;
 }
 
 .css-typing h1 {

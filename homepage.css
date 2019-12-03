@@ -340,9 +340,9 @@ fp-bg {
     top: 10px;
     left: 50%;
     content: '';
-    width: 6px;
-    height: 6px;
-    margin-left: -3px;
+    width: 12px;
+    height: 12px;
+    margin-left: -6px;
     background-color: #fff;
     border-radius: 100%;
     -webkit-animation: sdb10 2s infinite;
