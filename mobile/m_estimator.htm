@@ -27,12 +27,12 @@
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <!-- close end -->
-            <a href="m_index.htm">HOME</a>
-            <a href="m_solar.htm">SOLAR</a>
-            <a href="m_wind.htm">WIND</a>
-            <a href="m_geo.htm">GEOTHEMAL</a>
-            <a href="m_challenges.htm">CHALLENGES</a>
-            <a class="present" href="m_estimator.htm">ESITMATOR</a>
+            <a href="m_index.htm">Home</a>
+            <a href="m_solar.htm">Solar</a>
+            <a href="m_wind.htm">Wind</a>
+            <a href="m_geo.htm">Geothemal</a>
+            <a class="present" href="m_estimator.htm">Cost Savings Calculator</a>
+            <a href="m_about.htm">About us</a>
         </div>
 
         <span onclick="openNav()"> &#9776; </span>
@@ -41,29 +41,20 @@
     <div class="page_content">
 
         <div class="css-typing">
-            <h1>Solar Energy Calculator</h1>
+            <h1>Solar Energy</h1>
         </div>
 
-        <!-- <form>
-
-             <p> electricity usage(kWH): <input type="text" id="usage"></p>
-            <p> cost of electricity(permonth): <input type="text" id="cost"></p> 
-
-
-            <input type="button" onClick="calculate()" Value="calculate" />
-        </form> -->
 
         <form>
-
+            <p> Plese enter you montly Electricity in KWH and montly electricity Expense</p>
             <label class="matter-textfield-outlined">
-            <input placeholder=" "  type="text" id="usage">
-            <span>Electricity Usage(kWH)</span>
-        </label>
+                <input placeholder=" "  type="text" id="usage">
+                <span class="headin">Electricity Usage(kWH)</span>
+            </label>
             <label class="matter-textfield-outlined">
-          <input placeholder=" "  type="text" id="cost">
-          <span>Electricity cost(monthly)</span>
-      </label>
-            <!-- <button class="matter-button-outlined" onClick="calcualte()" value="calculate">calculate</button> -->
+              <input placeholder=" "  type="text" id="cost">
+              <span class="headin">Electricity cost</span>
+          </label>
             <div class="calc">
                 <input type="button" onclick="calculate()" Value="calculate" /></div>
         </form>
@@ -74,17 +65,17 @@
 
         <section class="results">
             <p>*costs may vary</p>
-            <p>**average american household uses about 1000KWH per month</p>
-            <p>***calculate for 20 yrs</p>
+            <p>**average american household uses about 1000KWH per month Default value is 1000KWH</p>
+            <p>***calculated based on 20 yrs</p>
 
-            <p>cost per month: <span id="cost_per_month"><br></span></p>
+            <p>Cost per month: <span class="txt_result" id="cost_per_month"><br></span></p>
             <!-- <span id="cost"></span> -->
-            <p>Estimated upfront costs: <span id="upfront_cost"></span><br></p>
-            <p>time untill Payback: <span id="time_payback"></span><br></p>
-            <p>savings: <span id="saving"></span><br></p>
-            <p>Carbon dioxide emissions: <span id="co2_emissions_saved"></span><br></p>
-            <p>Sulfur dioxide emissions: <span id="so2_emissions_saved"></span><br></p>
-            <p>Nitric oxide emissions: <span id="no_emissions_saved"></span><br></p>
+            <p>Estimated upfront costs: <span class="txt_result" id="upfront_cost"></span><br></p>
+            <p>Time until payback: <span class="txt_result" id="time_payback"></span><br></p>
+            <p>Savings: <span class="txt_result" id="saving"></span><br></p>
+            <p>Carbon dioxide emissions: <span class="txt_result" id="co2_emissions_saved"></span><br></p>
+            <p>Sulfur dioxide emissions: <span class="txt_result" id="so2_emissions_saved"></span><br></p>
+            <p>Nitric oxide emissions: <span class="txt_result" id="no_emissions_saved"></span><br></p>
         </section>
 
 
@@ -121,11 +112,11 @@
 
             })();
         </script>
-        <!-- animantiona end -->
+        <!-- animantion end -->
         <!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
         <script>
             function calculate() {
-
+                kWH_usage = 1000;
                 kWH_usage = document.getElementById("usage").value;
                 cPM = document.getElementById("cost").value;
 
@@ -156,13 +147,12 @@
 
 
 
-
                 // document.getElementById("result").innerHTML = 
 
                 document.getElementById("cost_per_month").innerHTML = " $ " + Math.round(Cost_PP / (20 * 12));
                 document.getElementById("saving").innerHTML = " $ " + Savings;
                 document.getElementById("co2_emissions_saved").innerHTML = co2_savedEmisssion + " Kg saved";
-                document.getElementById("so2_emissions_saved").innerHTML = so2_savedEmisssion + " kg saved";
+                document.getElementById("so2_emissions_saved").innerHTML = so2_savedEmisssion + " Kg saved";
                 document.getElementById("no_emissions_saved").innerHTML = no_savedEmisssion + " Kg saved";
                 document.getElementById("upfront_cost").innerHTML = " $ " + Cost_PP;
                 document.getElementById("time_payback").innerHTML = Math.floor(Cost_PP / (cPM * 12)) + " Years";
@@ -176,21 +166,28 @@
 
             }
         </script>
-        <script>
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "100%";
-            }
 
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-            }
-        </script>
-        <script type="text/javascript">
-            if (screen.width >= 699) {
-                document.location = "../index.htm";
-            }
-        </script>
 
+
+
+
+    </div>
+
+    <script type="text/javascript">
+        if (screen.width >= 699) {
+            document.location = "../index.htm";
+        }
+    </script>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
 
 </html>
