@@ -29,6 +29,7 @@ body {
     /* padding: 0px; */
     overflow-x: hidden;
     position: absolute;
+    z-index: 150;
 }
 
 
