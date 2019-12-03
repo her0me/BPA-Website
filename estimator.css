@@ -69,9 +69,7 @@ button {
 }
 
 .results p:nth-child(1),
-.results p:nth-child(2),
-.results p:nth-child(3),
-.results p:nth-child(4) {
+.results p:nth-child(2){
     color: white;
     font-size: 1.1em;
 }
@@ -87,13 +85,14 @@ input[type=button] {
     background-color: rgba(0, 0, 0, 0.2);
     border: none;
     color: white;
-    padding: 16px 32px;
+    padding: 16px 100px;
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
     /* left: 200px; */
     z-index: 900;
     position: absolute;
+    font-size: 20px;
 }
 
 .calc {
