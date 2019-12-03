@@ -67,8 +67,7 @@ button {
 }
 
 .results p:nth-child(1),
-.results p:nth-child(2),
-.results p:nth-child(3) {
+.results p:nth-child(2) {
     color: white;
     font-size: 0.75em;
 }
