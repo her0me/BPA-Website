@@ -186,6 +186,31 @@ fp-bg {
     backdrop-filter: brightness(60%); */
 }
 
+.nav_help_txt h1 {
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    opacity: 0;
+    animation: vis_que 9s ease-in 1;
+    top: 42%;
+    left: 3%;
+}
+
+@keyframes vis_que {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 .sidebar .info p {
     color: rgb(255, 255, 255);
 }
@@ -323,7 +348,12 @@ fp-bg {
     font-weight: normal;
     font-size: 1rem;
     color: rgb(255, 255, 255);
-    margin-top: -9%;
+    margin-top: -11%;
+}
+
+.scroll a {
+    padding-bottom: 15%;
+    padding-top: 15%;
 }
 
 
@@ -397,6 +427,23 @@ fp-bg {
 .scroll a {
     padding-top: 80px;
     text-decoration: none;
+}
+
+.scroll .samp {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb07 2s infinite;
+    animation: sdb07 2s infinite;
+    opacity: 0;
+    box-sizing: border-box;
+    border-left: 1px solid rgba(255, 255, 255, 0);
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
 
 .scroll a span {
