@@ -115,63 +115,61 @@
         <!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
         <script>
             function calculate() {
-                function calculate() {
-                    var kWH_usage = Number(document.getElementById("usage").value);
-                    var kWH_usage_test = String(kWH_usage);
-                    var cPM = Number(document.getElementById("cost").value);
-                    var cPM_test = String(cPM);
-                    var output = true;
+                var kWH_usage = Number(document.getElementById("usage").value);
+                var kWH_usage_test = String(kWH_usage);
+                var cPM = Number(document.getElementById("cost").value);
+                var cPM_test = String(cPM);
+                var output = true;
 
-                    if (kWH_usage_test != "NaN" && kWH_usage_test != "0" && cPM_test != "NaN" && cPM_test != "0") {
+                if (kWH_usage_test != "NaN" && kWH_usage_test != "0" && cPM_test != "NaN" && cPM_test != "0") {
 
-                        var Cost_20Yrs = cPM * 12 * 20;
+                    var Cost_20Yrs = cPM * 12 * 20;
 
-                        if (kWH_usage < 1000) {
-                            var Cost_PP = 11000;
+                    if (kWH_usage < 1000) {
+                        var Cost_PP = 11000;
 
-                        } else if (kWH_usage >= 1000 && kWH_usage < 1500) {
-                            var Cost_PP = 15000;
+                    } else if (kWH_usage >= 1000 && kWH_usage < 1500) {
+                        var Cost_PP = 15000;
 
-                        } else if (kWH_usage >= 1500 && kWH_usage < 2000) {
-                            var Cost_PP = 22000;
+                    } else if (kWH_usage >= 1500 && kWH_usage < 2000) {
+                        var Cost_PP = 22000;
 
-                        } else if (kWH_usage >= 2000 && kWH_usage < 3000) {
-                            var Cost_PP = 30000;
+                    } else if (kWH_usage >= 2000 && kWH_usage < 3000) {
+                        var Cost_PP = 30000;
 
-                        } else if (kWH_usage >= 3000 && kWH_usage < 4000) {
-                            var Cost_PP = 45000;
+                    } else if (kWH_usage >= 3000 && kWH_usage < 4000) {
+                        var Cost_PP = 45000;
 
-                        } else if (kWH_usage >= 4000 && kWH_usage < 6000) {
-                            var Cost_PP = 18000;
-
-                        } else {
-                            alert("Your input is out of our calculation's range, please try again.");
-                            output = false;
-                        }
-
-                        if (output == true) {
-                            //do some calculations
-                            var Savings = Cost_20Yrs - Cost_PP;
-                            var electricityProduced = kWH_usage * 12 * 20;
-                            var co2_savedEmisssion = Math.round(electricityProduced * 0.95);
-                            var so2_savedEmisssion = Math.round(electricityProduced * 0.0072);
-                            var no_savedEmisssion = Math.round(electricityProduced * 0.0045);
-
-                            //output to the page
-                            document.getElementById("cost_per_month").innerHTML = " $ " + Math.round(Cost_PP / (20 * 12));
-                            document.getElementById("saving").innerHTML = " $ " + Savings;
-                            document.getElementById("co2_emissions_saved").innerHTML = co2_savedEmisssion + " Kg saved";
-                            document.getElementById("so2_emissions_saved").innerHTML = so2_savedEmisssion + " Kg saved";
-                            document.getElementById("no_emissions_saved").innerHTML = no_savedEmisssion + " Kg saved";
-                            document.getElementById("upfront_cost").innerHTML = " $ " + Cost_PP;
-                            document.getElementById("time_payback").innerHTML = Math.floor(Cost_PP / (cPM * 12)) + " Years";
-                        }
+                    } else if (kWH_usage >= 4000 && kWH_usage < 6000) {
+                        var Cost_PP = 18000;
 
                     } else {
-                        alert("Error. The data you entered is not valid, please try again.")
+                        alert("Your input is out of our calculation's range, please try again.");
+                        output = false;
                     }
 
+                    if (output == true) {
+                        //do some calculations
+                        var Savings = Cost_20Yrs - Cost_PP;
+                        var electricityProduced = kWH_usage * 12 * 20;
+                        var co2_savedEmisssion = Math.round(electricityProduced * 0.95);
+                        var so2_savedEmisssion = Math.round(electricityProduced * 0.0072);
+                        var no_savedEmisssion = Math.round(electricityProduced * 0.0045);
+
+                        //output to the page
+                        document.getElementById("cost_per_month").innerHTML = " $ " + Math.round(Cost_PP / (20 * 12));
+                        document.getElementById("saving").innerHTML = " $ " + Savings;
+                        document.getElementById("co2_emissions_saved").innerHTML = co2_savedEmisssion + " Kg saved";
+                        document.getElementById("so2_emissions_saved").innerHTML = so2_savedEmisssion + " Kg saved";
+                        document.getElementById("no_emissions_saved").innerHTML = no_savedEmisssion + " Kg saved";
+                        document.getElementById("upfront_cost").innerHTML = " $ " + Cost_PP;
+                        document.getElementById("time_payback").innerHTML = Math.floor(Cost_PP / (cPM * 12)) + " Years";
+                    }
+
+                } else {
+                    alert("Error. The data you entered is not valid, please try again.")
                 }
+
             }
         </script>
 
