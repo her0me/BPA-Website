@@ -90,12 +90,6 @@
                 document.onreadystatechange = () => {
 
                     if (document.readyState === 'complete') {
-
-                        /**
-                         * Setup your Lazy Line element.
-                         * see README file for more settings
-                         */
-
                         let el = document.querySelector('#A25228');
                         let myAnimation = new LazyLinePainter(el, {
                             "ease": "easeOutCubic",
@@ -120,8 +114,12 @@
                 var cPM_test = String(cPM);
                 var output = true;
 
+<<<<<<< Updated upstream
                 if (kWH_usage_test != "NaN" && kWH_usage_test != "0" && cPM_test != "NaN" && cPM_test != "0" &&
                     kWH_usage > 0 && cPM > 0) {
+=======
+                if (kWH_usage_test != "NaN" && kWH_usage_test != "0" && cPM_test != "NaN" && cPM_test != "0") {
+>>>>>>> Stashed changes
 
                     var Cost_20Yrs = cPM * 12 * 20;
 
