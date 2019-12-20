@@ -34,6 +34,7 @@
     <!--navigation end-->
     <div id="fullpage">
         <div class="section s1 fp-bg" id="home-image">
+            <div class="fp-bg"></div>
             <div class="sidebar">
                 <section class="info">
                     <div class="info_txt">
@@ -183,7 +184,16 @@
 
             navigationTooltips: ['Energy matters', 'Wind', 'Solar', 'Geothermal', 'Resources'],
 
+            parallax: true,
+            parallaxOptions: {
+                type: 'reveal',
+                percentage: 62,
+                property: 'translate'
+            },
+            responsiveSlides: true,
 
+            easing: 'easeInOutQuart',
+            easingcss3: 'ease',
 
             //setLockAnchors: true,
             //autoScrolling: false, 

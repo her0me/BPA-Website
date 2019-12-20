@@ -28,6 +28,7 @@ fp-bg {
 
 .info p {
     font-size: 1.25em;
+    padding-right: 15px;
     font-family: Rockwell;
     font-style: normal;
     font-weight: normal;
@@ -115,12 +116,13 @@ fp-bg {
 .s2 input[type=button],
 .s3 input[type=button],
 .s4 input[type=button] {
-    -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(70%) !important;
+    /* -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(70%) !important;
     -ms-backdrop-filter: saturate(180%) blur(20px) brightness(70%) !important;
     -o-backdrop-filter: saturate(180%) blur(20px) brightness(70%) !important;
-    backdrop-filter: saturate(180%) blur(20px) brightness(70%) !important;
-    background-color: rgba(0, 0, 0, 0.2);
-    color: white;
+    backdrop-filter: saturate(180%) blur(20px) brightness(70%) !important; */
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    background-color: white;
+    color: black;
     padding: 16px 32px;
     text-decoration: none;
     border-style: none;
@@ -178,10 +180,10 @@ fp-bg {
     top: 0;
     right: 0;
     overflow: visible;
-    -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(60%);
-    -ms-backdrop-filter: saturate(180%) blur(20px) brightness(60%);
-    -o-backdrop-filter: saturate(180%) blur(20px) brightness(60%);
-    backdrop-filter: saturate(180%) blur(20px) brightness(60%);
+    -webkit-backdrop-filter: saturate(180%) blur(30px) brightness(70%);
+    -ms-backdrop-filter: saturate(180%) blur(30px) brightness(70%);
+    -o-backdrop-filter: saturate(180%) blur(30px) brightness(70%);
+    backdrop-filter: saturate(180%) blur(30px) brightness(70%);
     /* backdrop-filter: blur(5px);
     backdrop-filter: brightness(60%); */
 }
@@ -226,7 +228,8 @@ fp-bg {
 }
 
 .heading {
-    right: 90vh;
+    /* right: 90vh; */
+    margin-left: 50vw;
     top: 13vh;
     position: absolute;
     z-index: 50;
@@ -251,19 +254,15 @@ fp-bg {
 }
 
 .Rectangle_5 {
-    /* -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(50%);*/
-    /* backdrop-filter: saturate(180%) blur(20px) brightness(50%); */
-    -ms-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
-    -o-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
-    -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
-    backdrop-filter: saturate(180%) blur(20px) brightness(50%);
-    /* background-color: rgba(0, 0, 0, 0.7); */
+    -ms-backdrop-filter: saturate(180%) blur(60px) brightness(70%);
+    -o-backdrop-filter: saturate(180%) blur(60px) brightness(57%);
+    -webkit-backdrop-filter: saturate(180%) blur(60px) brightness(70%);
+    backdrop-filter: saturate(180%) blur(60px) brightness(70%);
     overflow: visible;
     width: 592px;
     height: 336px;
     top: 0;
     left: 0;
-    /* //coment */
     z-index: 600;
 }
 
