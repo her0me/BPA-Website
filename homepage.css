@@ -689,8 +689,7 @@ fp-bg {
 
 /* @media screen and (min-width: 768px) {} */
 
-
-/* @media screen and (max-height: 700px) {
+@media screen and (max-height: 700px) {
     .Rectangle_5 {
         -ms-backdrop-filter: saturate(180%) blur(60px) brightness(70%);
         -o-backdrop-filter: saturate(180%) blur(60px) brightness(57%);
@@ -719,7 +718,7 @@ fp-bg {
         z-index: 605;
         padding-right: 18px;
     }
-} */
+}
 
 @media screen and (max-width: 1250px) {
     .Rectangle_5 {
