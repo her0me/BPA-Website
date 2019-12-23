@@ -1,11 +1,11 @@
-.navigation span {
-    font-size: 30px;
+.s_navigation span {
+    font-size: 50px;
     cursor: pointer;
     position: absolute;
     top: 5vh;
-    right: 5vh;
+    left: 90vw;
     z-index: 750;
-    color: white;
+    color: #ffffff;
 }
 
 .sidenav {

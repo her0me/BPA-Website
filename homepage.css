@@ -263,6 +263,10 @@ fp-bg {
     padding-right: 18px;
 }
 
+.s4 .heading section {
+    font-size: 75px;
+}
+
 .Rectangle_5 {
     -ms-backdrop-filter: saturate(180%) blur(60px) brightness(70%);
     -o-backdrop-filter: saturate(180%) blur(60px) brightness(57%);
@@ -549,6 +553,20 @@ fp-bg {
     --matter-helper-safari3: rgba(var(--matter-onsurface-rgb, 255, 255, 255), 0.87) !important;
 }
 
+
+/* ______________________________________________________________________________ */
+
+
+/* ______________________________________________________________________________ */
+
+.s_navigation {
+    display: none;
+}
+
+.VMV {
+    display: none;
+}
+
 @media screen and (max-width:768px) {
     .sidebar {
         height: 100vh;
@@ -563,13 +581,41 @@ fp-bg {
         -o-backdrop-filter: saturate(180%) blur(30px) brightness(70%);
         backdrop-filter: saturate(180%) blur(30px) brightness(70%);
     }
+    .heading {
+        /* right: 90vh; */
+        left: 25vw;
+        top: 13vh;
+        position: absolute;
+        z-index: 50;
+        margin-left: 0;
+    }
+    .heading_txt {
+        overflow: hidden;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Rockwell;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 3.5rem !important;
+        color: rgb(255, 255, 255);
+        letter-spacing: -0.27px;
+        margin-top: 35px;
+        margin-left: 18px;
+        position: fixed;
+        z-index: 605;
+        padding-right: 18px;
+    }
+    .s4 .heading section {
+        font-size: 50px !important;
+    }
     .Rectangle_5 {
         -ms-backdrop-filter: saturate(180%) blur(60px) brightness(70%);
         -o-backdrop-filter: saturate(180%) blur(60px) brightness(57%);
         -webkit-backdrop-filter: saturate(180%) blur(60px) brightness(70%);
         backdrop-filter: saturate(180%) blur(60px) brightness(70%);
         overflow: visible;
-        width: 500px;
+        width: 50vw !important;
+        min-width: 377px !important;
         height: 285px;
         top: 0;
         left: 0;
@@ -587,11 +633,6 @@ fp-bg {
     .s2 input[type=button],
     .s3 input[type=button],
     .s4 input[type=button] {
-        /* -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(70%) !important;
-    -ms-backdrop-filter: saturate(180%) blur(20px) brightness(70%) !important;
-    -o-backdrop-filter: saturate(180%) blur(20px) brightness(70%) !important;
-    backdrop-filter: saturate(180%) blur(20px) brightness(70%) !important; */
-        /* background-color: rgba(0, 0, 0, 0.4); */
         background-color: white;
         color: black;
         padding: 25px 50px;
@@ -604,17 +645,52 @@ fp-bg {
         font-style: normal;
         font-weight: normal;
         font-size: 4vw;
-        right: 57%;
+        right: 25%;
         top: 80%;
         position: absolute;
-        /* box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.486); */
+        width: 50%;
+    }
+    .s_navigation {
+        display: block;
+        position: absolute;
+        z-index: 999;
+    }
+    .navbar {
+        display: none;
+    }
+    .VMV {
+        display: block;
+        z-index: 999;
+    }
+    .vmv {
+        top: 2% !important;
+        bottom: none !important;
+        position: absolute;
+        left: 25%;
+        width: 50%;
+    }
+    .VMV input[type=button] {
+        background-color: rgba(0, 0, 0, 0.2);
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        /* left: 200px; */
+        z-index: 900;
+        font-family: Rockwell;
+        font-style: normal;
+        font-weight: normal;
+        text-transform: uppercase;
     }
 }
 
 
 /* @media screen and (min-width: 768px) {} */
 
-@media screen and (max-height: 700px) {
+
+/* @media screen and (max-height: 700px) {
     .Rectangle_5 {
         -ms-backdrop-filter: saturate(180%) blur(60px) brightness(70%);
         -o-backdrop-filter: saturate(180%) blur(60px) brightness(57%);
@@ -643,7 +719,7 @@ fp-bg {
         z-index: 605;
         padding-right: 18px;
     }
-}
+} */
 
 @media screen and (max-width: 1250px) {
     .Rectangle_5 {
@@ -673,5 +749,8 @@ fp-bg {
         position: fixed;
         z-index: 605;
         padding-right: 18px;
+    }
+    .s4 .heading section {
+        font-size: 60px;
     }
 }
