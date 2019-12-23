@@ -23,6 +23,11 @@
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="loader"></div>
+        <img class="ctrimg" src="Annotation_2019-12-01_131848-removebg-preview (1).jpg" alt="Clean Energy Matters">
+    </div>
+
     <!-- start of navigation-->
     <nav class="navbar">
         <ul class="navlist">
@@ -196,6 +201,17 @@
     </div>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js' type="298d65b626975a271324d48c-text/javascript"></script>
+    <!-- <script>
+        setTimeout(function() {
+            $('.preloader').fadeToggle();
+        }, 1500);
+    </script> -->
+    <script>
+        window.addEventListener('load', () => {
+            const preloader = document.querySelector('.preloader');
+            preloader.classList.add("preload-finish");
+        })
+    </script>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/vendors/scrolloverflow.min.js"></script>
 
