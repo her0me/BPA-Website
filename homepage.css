@@ -184,8 +184,6 @@ fp-bg {
     -ms-backdrop-filter: saturate(180%) blur(30px) brightness(70%);
     -o-backdrop-filter: saturate(180%) blur(30px) brightness(70%);
     backdrop-filter: saturate(180%) blur(30px) brightness(70%);
-    /* backdrop-filter: blur(5px);
-    backdrop-filter: brightness(60%); */
 }
 
 .nav_help_txt h1 {
@@ -220,11 +218,17 @@ fp-bg {
 .Rectangle_5 {
     position: absolute;
     overflow: hidden;
-    /* right: 52vh;
-    top: 13vh; */
-    /* width: 592;
-    height: 336;
-    box-shadow: 35px 29px 29px rgba(0, 0, 0, 0.55); */
+}
+
+
+/*=======================*/
+
+.Rectangle_5a {
+    position: absolute;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
 }
 
 .heading {
@@ -235,9 +239,15 @@ fp-bg {
     z-index: 50;
 }
 
+.heading_a {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 20px;
+    position: absolute;
+}
+
 .heading_txt {
     overflow: hidden;
-    /* width: 25%; */
     white-space: nowrap;
     text-align: left;
     font-family: Rockwell;
@@ -266,17 +276,34 @@ fp-bg {
     z-index: 600;
 }
 
+.Rectangle_5a {
+    /* -ms-backdrop-filter: saturate(180%) blur(60px) brightness(70%);
+    -o-backdrop-filter: saturate(180%) blur(60px) brightness(57%);
+    -webkit-backdrop-filter: saturate(180%) blur(60px) brightness(70%);
+    backdrop-filter: saturate(180%) blur(60px) brightness(70%); */
+    background-color: white;
+    overflow: visible;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 0;
+    z-index: 600;
+}
+
 
 /* code just for mozilla since backdrop isnt added */
 
 @-moz-document url-prefix() {
     .Rectangle_5 {
-        /* -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(50%);*/
-        /* backdrop-filter: saturate(180%) blur(20px) brightness(50%); */
-        /* -ms-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
-        -o-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
-        -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
-        backdrop-filter: saturate(180%) blur(20px) brightness(50%); */
+        background-color: rgba(0, 0, 0, 0.7);
+        overflow: visible;
+        width: 592px;
+        height: 336px;
+        top: 0;
+        left: 0;
+        z-index: 600;
+    }
+    .Rectangle_5a {
         background-color: rgba(0, 0, 0, 0.7);
         overflow: visible;
         width: 592px;
@@ -305,12 +332,15 @@ fp-bg {
 
 @supports (-ms-ime-align:auto) {
     .Rectangle_5 {
-        /* -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(50%);*/
-        /* backdrop-filter: saturate(180%) blur(20px) brightness(50%); */
-        /* -ms-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
-        -o-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
-        -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(50%);
-        backdrop-filter: saturate(180%) blur(20px) brightness(50%); */
+        background-color: rgba(0, 0, 0, 0.7);
+        overflow: visible;
+        width: 592px;
+        height: 336px;
+        top: 0;
+        left: 0;
+        z-index: 600;
+    }
+    .Rectangle_5a {
         background-color: rgba(0, 0, 0, 0.7);
         overflow: visible;
         width: 592px;
@@ -517,4 +547,131 @@ fp-bg {
     --matter-helper-safari1: rgba(var(--matter-onsurface-rgb, 255, 255, 255), 0.38) !important;
     --matter-helper-safari2: rgba(var(--matter-onsurface-rgb, 255, 255, 255), 0.6) !important;
     --matter-helper-safari3: rgba(var(--matter-onsurface-rgb, 255, 255, 255), 0.87) !important;
+}
+
+@media screen and (max-width:768px) {
+    .sidebar {
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        overflow: visible;
+        -webkit-backdrop-filter: saturate(180%) blur(30px) brightness(70%);
+        -ms-backdrop-filter: saturate(180%) blur(30px) brightness(70%);
+        -o-backdrop-filter: saturate(180%) blur(30px) brightness(70%);
+        backdrop-filter: saturate(180%) blur(30px) brightness(70%);
+    }
+    .Rectangle_5 {
+        -ms-backdrop-filter: saturate(180%) blur(60px) brightness(70%);
+        -o-backdrop-filter: saturate(180%) blur(60px) brightness(57%);
+        -webkit-backdrop-filter: saturate(180%) blur(60px) brightness(70%);
+        backdrop-filter: saturate(180%) blur(60px) brightness(70%);
+        overflow: visible;
+        width: 500px;
+        height: 285px;
+        top: 0;
+        left: 0;
+        z-index: 600;
+    }
+    .info p {
+        font-size: 1.25em;
+        padding-right: 50px;
+        padding-left: 50px;
+        font-family: Rockwell;
+        font-style: normal;
+        font-weight: normal;
+    }
+    .s1 input[type=button],
+    .s2 input[type=button],
+    .s3 input[type=button],
+    .s4 input[type=button] {
+        /* -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(70%) !important;
+    -ms-backdrop-filter: saturate(180%) blur(20px) brightness(70%) !important;
+    -o-backdrop-filter: saturate(180%) blur(20px) brightness(70%) !important;
+    backdrop-filter: saturate(180%) blur(20px) brightness(70%) !important; */
+        /* background-color: rgba(0, 0, 0, 0.4); */
+        background-color: white;
+        color: black;
+        padding: 25px 50px;
+        text-decoration: none;
+        border-style: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        z-index: 900;
+        font-family: Rockwell;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 4vw;
+        right: 57%;
+        top: 80%;
+        position: absolute;
+        /* box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.486); */
+    }
+}
+
+
+/* @media screen and (min-width: 768px) {} */
+
+@media screen and (max-height: 700px) {
+    .Rectangle_5 {
+        -ms-backdrop-filter: saturate(180%) blur(60px) brightness(70%);
+        -o-backdrop-filter: saturate(180%) blur(60px) brightness(57%);
+        -webkit-backdrop-filter: saturate(180%) blur(60px) brightness(70%);
+        backdrop-filter: saturate(180%) blur(60px) brightness(70%);
+        overflow: visible;
+        width: 450px;
+        height: 260px;
+        top: 0;
+        left: 0;
+        z-index: 600;
+    }
+    .heading_txt {
+        overflow: hidden;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Rockwell;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 4rem;
+        color: rgb(255, 255, 255);
+        letter-spacing: -0.27px;
+        margin-top: 24px;
+        margin-left: 12px;
+        position: fixed;
+        z-index: 605;
+        padding-right: 18px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .Rectangle_5 {
+        -ms-backdrop-filter: saturate(180%) blur(60px) brightness(70%);
+        -o-backdrop-filter: saturate(180%) blur(60px) brightness(57%);
+        -webkit-backdrop-filter: saturate(180%) blur(60px) brightness(70%);
+        backdrop-filter: saturate(180%) blur(60px) brightness(70%);
+        overflow: visible;
+        width: 450px;
+        height: 260px;
+        top: 0;
+        left: 0;
+        z-index: 600;
+    }
+    .heading_txt {
+        overflow: hidden;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Rockwell;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 4rem;
+        color: rgb(255, 255, 255);
+        letter-spacing: -0.27px;
+        margin-top: 24px;
+        margin-left: 12px;
+        position: fixed;
+        z-index: 605;
+        padding-right: 18px;
+    }
 }
