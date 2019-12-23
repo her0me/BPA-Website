@@ -89,7 +89,6 @@
         background-color: rgba(0, 0, 0, 0.2);
         border: none;
         color: white;
-        ;
         padding: 16px 32px;
         text-decoration: none;
         margin: 4px 2px;
@@ -100,6 +99,14 @@
         font-style: normal;
         font-weight: normal;
         text-transform: uppercase;
+    }
+    
+    .vdv {
+        top: 2% !important;
+        bottom: none !important;
+        position: absolute;
+        left: 25%;
+        width: 50%;
     }
     
     .fp-tableCell {
@@ -113,7 +120,6 @@
     .heading {
         -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(50%) !important;
         -ms-backdrop-filter: saturate(180%) blur(20px) brightness(50%) !important;
-        /* -moz-background-color: rgba(0, 0, 0, 0.5); */
         backdrop-filter: saturate(180%) blur(20px) brightness(50%) !important;
         background-color: rgba(0, 0, 0, 0.5);
         box-shadow: 35px 29px 29px rgba(0, 0, 0, 0.55);
@@ -122,15 +128,11 @@
         height: 30%;
         margin-left: auto;
         margin-right: auto;
-        /* padding: ; */
     }
     
     .heading_txt {
-        /* position: absolute; */
         overflow: hidden;
-        /* width: 25%; */
         white-space: nowrap;
-        /* text-align: center; */
         font-family: Rockwell;
         font-style: normal;
         font-weight: normal;
@@ -138,12 +140,17 @@
         color: rgb(255, 255, 255);
         letter-spacing: -0.27px;
         top: 6%;
-        /* margin-right: auto;
-    margin-left: auto; */
-        /* position: fixed; */
         z-index: 605;
         padding-left: 4%;
         padding-right: 4%;
         padding-top: 3%;
         padding-bottom: 3%;
+    }
+    
+    .VDV {
+        display: none;
+    }
+    
+    .overlay {
+        display: none;
     }
