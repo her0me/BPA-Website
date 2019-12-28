@@ -28,6 +28,9 @@
         <img class="ctrimg" src="Annotation_2019-12-01_131848-removebg-preview (1).jpg" alt="Clean Energy Matters">
 
     </div>
+    <div class="preleaver">
+        <div class="leaver"></div>
+    </div>
 
 
     <!-- start of navigation-->
@@ -208,14 +211,21 @@
             $('.preloader').fadeToggle();
         }, 1500);
     </script> -->
+
     <script>
         window.addEventListener('load', () => {
             const preloader = document.querySelector('.preloader');
             preloader.classList.add("preload-finish");
-
-            /* const preloader1 = document.querySelector('.loader-swipe');
-             preloader1.classList.add("swiped");*/
         })
+    </script>
+
+    <script>
+        window.beforeunload = function() {
+            //myfun();
+            //return 'Are you sure you want to leave?';
+            const preleave = document.querySelector('.preleaver');
+            preleave.classList.add("preleaver-finish");
+        };
     </script>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/vendors/scrolloverflow.min.js"></script>
