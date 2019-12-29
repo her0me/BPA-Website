@@ -41,14 +41,14 @@ body {
 form label,
 button {
     top: 25%;
-    left: 175px;
+    left: 100px;
     margin-left: 15px;
     z-index: 900;
 }
 
 form p {
     top: 25%;
-    padding-left: 185px;
+    padding-left: 100px;
     margin-left: 15px;
     z-index: 900;
     color: white;
@@ -62,7 +62,7 @@ button {
 }
 
 .results {
-    padding-left: 200px;
+    padding-left: 100px;
     padding-top: 50px;
 }
 
@@ -94,7 +94,7 @@ input[type=button] {
 
 .calc {
     padding-top: 50px;
-    padding-left: 200px;
+    padding-left: 120px;
     z-index: 900;
 }
 
