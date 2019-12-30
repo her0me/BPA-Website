@@ -219,14 +219,19 @@
         })
     </script>
 
-    <script>
-        window.beforeunload = function() {
+    <!-- <script>
+        window.unload = function() {
             //myfun();
             //return 'Are you sure you want to leave?';
             const preleave = document.querySelector('.preleaver');
             preleave.classList.add("preleaver-finish");
         };
-    </script>
+
+        /*    $(window).unload(function() {
+                const preleave = document.querySelector('.preleaver');
+                preleave.classList.add("preleaver-finish");
+            });*/
+    </script> -->
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/vendors/scrolloverflow.min.js"></script>
 
