@@ -91,3 +91,7 @@ h1 {
     z-index: 500;
     position: fixed;
 }
+
+.VDV {
+    display: none;
+}

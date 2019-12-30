@@ -189,6 +189,7 @@ input[type=button] {
     position: absolute;
     left: 25%;
     width: 50%;
+    z-index: 9999 !important;
 }
 
 .fp-tableCell {
