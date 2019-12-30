@@ -108,3 +108,21 @@ body {
         font-size: 182px;
     }
 }
+
+
+/*-------------------------------------------------------------------------------------------------*/
+
+
+/* h1:before,
+h1:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.glitch:before {
+    left: 8px;
+    te
+} */
