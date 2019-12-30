@@ -1,6 +1,8 @@
 :root {
     --color1: #8400ff;
     --color2: #ff005a;
+    --basecolor1: #f5e6ff;
+    /* --basecolor1: #030005; */
 }
 
 * {
@@ -16,7 +18,7 @@ body {
 #notfound {
     position: relative;
     height: 100vh;
-    background: #030005;
+    background: var(--basecolor1);
 }
 
 #notfound .notfound {
@@ -55,21 +57,21 @@ body {
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: -12px;
-    color: #030005;
+    color: var(--basecolor1);
     text-transform: uppercase;
     text-shadow: -1px -1px 0px var(--color1), 1px 1px 0px var(--color2);
     letter-spacing: -20px;
 }
 
 .notfound .notfound-404 h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Rockwell;
     position: absolute;
     left: 0;
     right: 0;
     top: 110px;
     font-size: 42px;
     font-weight: 700;
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
     text-shadow: 0px 2px 0px var(--color1);
     letter-spacing: 13px;
