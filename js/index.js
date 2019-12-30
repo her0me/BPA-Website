@@ -1,4 +1,4 @@
-import Highway from '@dogstudio/highway/build/highway';
+import Highway from '@dogstudio/highway';
 import Fade from './transition';
 
 
