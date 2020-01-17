@@ -28,6 +28,8 @@ body {
 
 .cont__inner:hover .el__bg:after {
     opacity: 1;
+    filter: blur(30px);
+    /*filter*/
 }
 
 .el {
@@ -102,6 +104,7 @@ body {
     background: rgba(0, 0, 0, 0.3);
     opacity: 0;
     transition: opacity 0.5s;
+    transition: filter 0.5s;
 }
 
 .cont.s--el-active .el__bg:after {
@@ -423,6 +426,8 @@ body {
 
 .el:hover .el__bg:after {
     opacity: 0;
+    filter: blur(30px);
+    /* filter */
 }
 
 .el.s--active {
