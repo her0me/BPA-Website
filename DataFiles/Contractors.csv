@@ -1,7 +1,7 @@
-﻿Region,name,discription,address ,Phone Number,Contact
-Alabama,x1,x2,x3,x4,x5
-Alaska,,,,,
-Arizona,,,,,
+﻿Region,name,address,Phone Number,website
+Alabama,Vulcan Solar Power,3809 4th Terrace North Birmingham AL 35222,(205) 679-8666,www.vulcansolarpower.com
+Alaska,Remote Power,915 30th Ave Fairbanks AK 99701,(907) 457-4299,www.remotepowerinc.com
+Arizona,First Solar,350 W Washington St #600 Tempe AZ 85281,(602) 414-9300,www.firstsolar.com
 Arkansas,,,,,
 California,,,,,
 Colorado,,,,,
