@@ -56,7 +56,7 @@
           <span class="headin">Electricity cost</span>
       </label>
             <div class="calc">
-                <input type="button" onclick="calculate()" Value="Calculate" /></div>
+                <input type="button" onclick="calculate()" Value="Calculate" class="calculateButton"/></div>
         </form>
 
 
@@ -108,10 +108,29 @@
         <!-- animantion end -->
         <!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
         <script>
+            
+            // Get the input field
+            var input1 = document.getElementById("usage");
+            var input2 = document.getElementById("cost");
+            
+            input1.addEventListener("keyup", function(event) {
+                // Number 13 is the "Enter" key on the keyboard
+                if (event.keyCode === 13) {
+                    // Trigger the button element with a click
+                    document.getElementsByClassName("calculateButton")[0].click()
+                }
+            });
+            
+            input2.addEventListener("keyup", function(event) {
+                if (event.keyCode === 13) {
+                    document.getElementsByClassName("calculateButton")[0].click()
+                }
+            });
+            
             function calculate() {
-                var kWH_usage = Number(document.getElementById("usage").value);
+                var kWH_usage = Number(input1.value);
                 var kWH_usage_test = String(kWH_usage);
-                var cPM = Number(document.getElementById("cost").value);
+                var cPM = Number(input2.value);
                 var cPM_test = String(cPM);
                 var output = true;
 
