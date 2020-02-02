@@ -10,6 +10,10 @@
     transition: all 1.3s 0.5s cubic-bezier(1, 0.03, 0.85, 1.07);
 }
 
+html {
+    -webkit-appearance: none;
+}
+
 .loader {
     border: 0 solid transparent;
     border-radius: 50%;
