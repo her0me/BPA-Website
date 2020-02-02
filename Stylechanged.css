@@ -435,6 +435,7 @@ body {
 .el.s--active .el__bg {
     transform: translate3d(0, 0, 0);
     transition: transform 0.6s;
+    opacity: 0.4;
 }
 
 .el.s--active .el__bg:before {
@@ -457,4 +458,20 @@ body {
 .icon-link--twitter {
     left: auto;
     right: 5px;
+}
+
+.redirectButton input[type=button] {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-style: solid;
+    margin: 4px 2px;
+    cursor: pointer;
+    z-index: 900;
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    position: relative;
 }
