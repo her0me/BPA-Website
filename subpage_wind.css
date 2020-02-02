@@ -59,6 +59,15 @@
         height: fit-content;
     }
     
+    .tips {
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    
     .Mov_obj {
         top: 10vh;
         left: -25vw;
