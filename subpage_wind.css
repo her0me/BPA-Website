@@ -66,20 +66,36 @@
         position: fixed;
     }
     
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:1000px) {
         .main_Img {
             float: none;
             margin-left: auto;
             margin-right: auto;
-            width: 50%;
+            width: 80%;
         }
     }
     
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:1001px) {
         .main_Img {
             float: right;
             margin-top: 0px;
             margin-right: 0px;
             margin-left: 20px;
         }
+    }
+    
+    .redirectButton input[type=button] {
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-style: solid;
+        margin: 4px 2px;
+        cursor: pointer;
+        z-index: 900;
+        font-family: Rockwell;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1em;
+        position: relative;
     }
