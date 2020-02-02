@@ -12,11 +12,29 @@
     <link href="https://res.cloudinary.com/finnhvman/raw/upload/matter/matter-0.2.2.min.css" rel="stylesheet">
     <link rel="text/javascript" href="scriptfiles/lazy-line-painter-1.9.6.min.js" />
     <link rel="stylesheet" href="Scroll.css">
+    <link rel="stylesheet" href="mobile/css_files/m_navigation.css">
 </head>
 
 <body>
 
+    <div class="small_navBar">
 
+        <div class="navigation">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <!-- close end -->
+                <a href="index.htm">Home</a>
+                <a href="solar.htm">Solar</a>
+                <a href="wind.htm">Wind</a>
+                <a href="geo.htm">Geothermal</a>
+                <a class="present" href="estimator.htm">Cost Savings Calculator</a>
+                <a href="about.htm">About us</a>
+            </div>
+
+
+            <span onclick="openNav()"> &#9776; </span>
+        </div>
+    </div>
     <!-- start of navigation-->
     <nav class="navbar">
         <ul class="navlist">
@@ -39,6 +57,9 @@
 </svg>
     <div class="page_content">
 
+
+        <div class="spacing"></div>
+
         <div class="css-typing">
             <h1>Solar Energy Calculator</h1>
         </div>
@@ -60,9 +81,6 @@
         </form>
 
 
-
-
-        <br>
         <section class="results">
             <p>Costs may vary</p>
             <p>Calculated based on 20 yrs of payments</p>
@@ -193,9 +211,19 @@
 
     </div>
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         if (screen.width <= 699) {
             document.location = "mobile/m_index.htm";
+        }
+    </script> -->
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
         }
     </script>
     <!-- </<button> -->

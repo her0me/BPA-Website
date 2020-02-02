@@ -1,12 +1,18 @@
 #A25228 {
-    width: 70vw;
-    height: 70vh;
-    position: absolute;
+    width: 60vw;
+    height: 60vh;
+    position: fixed;
     overflow: hidden;
     top: 10vh;
-    left: -35vw;
-    z-index: 20;
+    /* left: 50vw; */
+    right: -30vw;
+    z-index: 15;
 }
+
+p , h1{
+    z-index: 9999;
+}
+
 
 html {
     overflow-y: scroll;
@@ -25,10 +31,14 @@ body {
     top: 0px;
     right: 0px;
     /* padding-left: 130px; */
-    padding-top: 130px;
+    padding-top: 0px;
     /* padding: 0px; */
     overflow-x: hidden;
     position: absolute;
+}
+
+.spacing{
+    height:90px;
 }
 
 
@@ -41,14 +51,15 @@ body {
 form label,
 button {
     top: 25%;
-    left: 100px;
+    left: 20px;
     margin-left: 15px;
     z-index: 900;
 }
 
 form p {
     top: 25%;
-    padding-left: 100px;
+    padding-left: 20px;
+    padding-right: 40px;
     margin-left: 15px;
     z-index: 900;
     color: white;
@@ -62,7 +73,8 @@ button {
 }
 
 .results {
-    padding-left: 100px;
+    padding-left: 20px;
+    padding-Right: 40px;
     padding-top: 50px;
 }
 
@@ -94,7 +106,7 @@ input[type=button] {
 
 .calc {
     padding-top: 50px;
-    padding-left: 120px;
+    padding-left: 20px;
     z-index: 900;
 }
 
@@ -111,7 +123,7 @@ input[type=button] {
 /* -------------------------------------------------------------------------------------------------------------------------------------- */
 
 .css-typing {
-    padding-left: 90px;
+    padding-left: 20px;
 }
 
 .css-typing h1 {
