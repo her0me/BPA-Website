@@ -222,7 +222,7 @@ input[type=button] {
 }
 
 .heading_txt {
-    overflow: hidden;
+    overflow: visible;
     white-space: nowrap;
     font-family: Rockwell;
     font-style: normal;
