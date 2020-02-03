@@ -237,6 +237,25 @@ input[type=button] {
     padding-bottom: 3%;
 }
 
+@supports (-webkit-overflow-scrolling: touch) {
+    .heading_txt {
+        overflow: visible;
+        white-space: nowrap;
+        font-family: Rockwell;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12vw;
+        color: rgb(255, 255, 255);
+        letter-spacing: -0.27px;
+        top: 80%;
+        z-index: 700;
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+}
+
 .VDV {
     display: none;
 }
