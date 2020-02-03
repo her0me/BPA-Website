@@ -85,6 +85,13 @@ body {
     background-color: #efeeee;
 }
 
+.s1_2 {
+    background-image: url("../../Images_cr/pexels-photo-2850347.jpeg");
+    height: 60vh;
+    background-size: auto 62vh;
+    background-repeat: no-repeat;
+}
+
 .s2 {
     background-image: url("../Images_cr/alternative-alternative-energy-electricity-1292464.jpg");
     height: 60vh;
@@ -157,6 +164,7 @@ body {
 }
 
 .s1 input[type=button],
+.s1_2 input[type=button],
 .s2 input[type=button],
 .s3 input[type=button],
 .s4 input[type=button] {
@@ -168,6 +176,10 @@ body {
     background-color: #efeeee !important;
     border: 1px solid rgba(0, 0, 0, 1);
     box-shadow: -6px -6px 26px 0 rgba(255, 255, 255, 0.73), 6px 6px 16px 0 rgba(217, 210, 200, 0.41);
+}
+
+.s6 input[type=button] {
+    color: #fff;
 }
 
 input[type=button] {
@@ -215,7 +227,7 @@ input[type=button] {
     box-shadow: 35px 29px 29px rgba(0, 0, 0, 0.55);
     overflow: hidden;
     width: 85%;
-    height: 35%;
+    height: 32%;
     margin-left: auto;
     margin-right: auto;
 }
