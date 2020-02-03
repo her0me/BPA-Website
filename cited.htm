@@ -7,6 +7,13 @@
     <link rel="shortcut icon" type="image/x-icon" href="iconhead.ico">
     <link href="subpage_wind.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="navigation.css" />
+    <link rel="stylesheet" href="Scroll.css">
+
+    <link rel="stylesheet" href="mobile/css_files/m_navigation.css">
+
+
+
+
     <style>
         body {
             background-color: #4158D0;
@@ -25,16 +32,40 @@
 
 <body>
     <!-- start of navigation-->
+    <!-- start of navigation-->
     <nav class="navbar">
         <ul class="navlist">
-            <li class="nav_active"><a href="index.htm">Home</a></li>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="biohome.htm">Bio-Home</a></li>
             <li><a href="wind.htm">Wind</a></li>
             <li><a href="solar.htm">Solar</a></li>
             <li><a href="geo.htm">Geothermal</a></li>
             <li><a href="estimator.htm">Cost Savings Calculator</a></li>
-            <li><a href="about.htm">About Us</a></li>
+            <li><a href="ChallengesM.htm">Challenges</a></li>
+
         </ul>
     </nav>
+
+    <div class="small_navBar">
+
+        <div class="navigation">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <!-- close end -->
+                <a href="index.htm">Home</a>
+                <a href="biohome.htm">Bio-Home</a>
+                <a href="wind.htm">Wind</a>
+                <a href="solar.htm">Solar</a>
+                <a href="geo.htm">Geothermal</a>
+                <a href="estimator.htm">Cost Savings Calculator</a>
+                <a href="ChallengesM.htm">Challenges</a>
+            </div>
+
+
+            <span onclick="openNav()"> &#9776; </span>
+        </div>
+    </div>
+    <!--navigation end-->
     <!--navigation end-->
     <div class="page_Content">
 
@@ -151,20 +182,17 @@
 
 
 
-        <!-- <svg class="Rectangle_3">
-    <lineargradient id="LinearGradientFill1" spreadMethod="pad" x1="0.882" x2="-0.576" y1="0.102" y2="1.62">
-      <stop offset="0" stop-color="#e34c25" stop-opacity="1"></stop>
-      <stop offset="1" stop-color="#afb434" stop-opacity="1"></stop>
-    </lineargradient>
-    <rect fill="url(#LinearGradientFill1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" class="Rectangle_3_Class" width="100vw" height="150vh"> </rect>
-  </svg> -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
     </div>
 
-    <script type="text/javascript">
-        if (screen.width <= 699) {
-            document.location = "mobile/m_index.htm";
-        }
-    </script>
 
 
 </body>
