@@ -9,10 +9,10 @@
     z-index: 15;
 }
 
-p , h1{
+p,
+h1 {
     z-index: 9999;
 }
-
 
 html {
     overflow-y: scroll;
@@ -37,8 +37,8 @@ body {
     position: absolute;
 }
 
-.spacing{
-    height:90px;
+.spacing {
+    height: 90px;
 }
 
 
@@ -102,6 +102,7 @@ input[type=button] {
     /* left: 200px; */
     z-index: 900;
     position: absolute;
+    -webkit-appearance: none;
 }
 
 .calc {
