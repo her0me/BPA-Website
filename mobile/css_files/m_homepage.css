@@ -167,7 +167,6 @@ body {
     /* background-color: rgba(0, 0, 0, 0.6); */
     background-color: #efeeee !important;
     border: 1px solid rgba(0, 0, 0, 1);
-    border-radius: 12px;
     box-shadow: -6px -6px 26px 0 rgba(255, 255, 255, 0.73), 6px 6px 16px 0 rgba(217, 210, 200, 0.41);
 }
 
