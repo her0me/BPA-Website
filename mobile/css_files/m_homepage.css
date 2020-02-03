@@ -204,6 +204,8 @@ input[type=button] {
 
 .heading_txt {
     position: absolute;
+    -webkit-transform: translate3d(0, 0, 1px);
+    z-index: 700;
 }
 
 .heading {
