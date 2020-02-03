@@ -8,6 +8,12 @@
     <link rel="shortcut icon" type="image/x-icon" href="http://bpawebsite2019.xyz/iconhead.ico">
     <link rel="stylesheet" href="navigation.css">
 
+    <link rel="stylesheet" href="mobile/css_files/m_navigation.css">
+
+    <link rel="stylesheet" href="scriptfiles/fullpage.css">
+
+    <link rel="stylesheet" href="challenges.css">
+
 
 
 
@@ -21,16 +27,75 @@
 
 <body data-gr-c-s-loaded="true">
 
+    <!-- start of navigation-->
+    <!-- start of navigation-->
     <nav class="navbar">
         <ul class="navlist">
             <li><a href="index.htm">Home</a></li>
+            <li><a>Bio-Home</a></li>
             <li><a href="wind.htm">Wind</a></li>
             <li><a href="solar.htm">Solar</a></li>
             <li><a href="geo.htm">Geothermal</a></li>
             <li><a href="estimator.htm">Cost Savings Calculator</a></li>
-            <li><a href="about.htm">About Us</a></li>
+            <li class="nav_active"><a class="active" href="ChallengesM.htm">Challenges</a></li>
+
         </ul>
     </nav>
+
+    <div class="small_navBar">
+
+        <div class="navigation">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <!-- close end -->
+                <a href="index.htm">Home</a>
+                <a href="biohome.htm">Bio-Home</a>
+                <a href="wind.htm">Wind</a>
+                <a href="solar.htm">Solar</a>
+                <a href="geo.htm">Geothermal</a>
+                <a href="estimator.htm">Cost Savings Calculator</a>
+                <a class="present" href="ChallengesM.htm">Challenges</a>
+            </div>
+
+
+            <span onclick="openNav()"> &#9776; </span>
+        </div>
+    </div>
+    <!--navigation end-->
+    <!--navigation end-->
+
+
+    <div class="small_cont">
+        <div id="fullpage">
+
+            <div class="section s1 fp-bg">
+                <h1>challenges</h1>
+                <p>There are many Challenges when building a Renewable energy system from governemnt restictions to state legilistations check with your local policies before you install one</p>
+            </div>
+            <div class="section s2 ">
+                <h1>Epa</h1>
+                <p></p>
+            </div>
+            <div class="section s3 ">
+                <h1>Zoning</h1>
+                <p></p>
+            </div>
+            <div class="section s4 ">
+                <h1>Home Associations</h1>
+                <p></p>
+            </div>
+            <div class="section s5 ">
+                <h1>Technology</h1>
+                <p></p>
+            </div>
+            <div class="section s6 ">
+                <h1>Insurance</h1>
+                <p>its always advisible to insure your investemnt in renewable systems becuse of a posibity of natural destruction.</p>
+            </div>
+
+
+        </div>
+    </div>
 
     <div class="cont">
         <!-- cont inner start -->
@@ -195,6 +260,36 @@
         </div>
         <!-- cont inner end -->
     </div>
+
+
+
+
+    <script src="scriptfiles/fullpage.js"></script>
+    <script>
+        new fullpage('#fullpage', {
+            licenseKey: '817420BB-EE5D4CD0-B46B6D0B-76C1ADA0',
+            lockAnchors: false,
+            anchors: ['1', '2', '3', '4', '5'],
+            autoScrolling: true,
+            navigation: true,
+            navigationPosition: 'left',
+            navigationTooltips: ['Challenges', 'EPA', 'Zoning', 'home associations', 'techonology & insurance'],
+
+
+        })
+    </script>
+    <!-- nav bar script -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+
 
     <script src="scriptfiles/script.js"></script>
 

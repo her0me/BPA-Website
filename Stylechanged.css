@@ -109,6 +109,104 @@ body {
     opacity: 1 !important;
 }
 
+
+/* .cont {
+    position: relative;
+    overflow: hidden;
+    height: 77vh;
+    padding: 115px 60px;
+    padding-bottom: 60px !important;
+    padding-right: 60px !important;
+}
+
+.cont__inner {
+    position: relative;
+    height: 100%;
+}
+
+.cont__inner:hover .el__bg:after {
+    opacity: 1;
+}
+
+.el {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 19.2%;
+    height: 100%;
+    background: #252525;
+    transition: transform 0.6s 0.7s, width 0.7s, opacity 0.6s 0.7s, z-index 0s 1.3s;
+    will-change: transform, width, opacity;
+}
+
+.el:not(.s--active) {
+    cursor: pointer;
+}
+
+.el__overflow {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+
+.el__inner {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    transition: transform 1s;
+}
+
+.cont.s--inactive .el__inner {
+    transform: translate3d(0, 100%, 0);
+}
+
+.el__bg {
+    position: relative;
+    width: calc(100vw - 140px);
+    height: 100%;
+    transition: transform 0.6s 0.7s;
+    will-change: transform;
+}
+
+.el__bg:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -5%;
+    width: 100%;
+    height: 110%;
+    background-size: cover;
+    background-position: center center;
+    transition: transform 1s;
+    transform: translate3d(0, 0, 0) scale(1);
+}
+
+.cont.s--inactive .el__bg:before {
+    transform: translate3d(0, -100%, 0) scale(1.2);
+}
+
+.el.s--active .el__bg:before {
+    transition: transform 0.8s;
+}
+
+.el__bg:after {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.cont.s--el-active .el__bg:after {
+    transition: opacity 0.5s 1.4s;
+    opacity: 1 !important;
+} */
+
 .el__preview-cont {
     z-index: 2;
     display: flex;
@@ -397,6 +495,36 @@ body {
     background-image: url("Images_cr/subpages/photography-of-person-holding-flashlight-near-windmills-1154460.jpg");
 }
 
+
+/* .el:nth-child(3) .el__bg:before {
+    transition-delay: 0.2s;
+    background-image: url("Images_cr/subpages/aerial-view-of-buildigns-1642125.jpg");
+}
+
+.el:nth-child(4) {
+    transform: translate3d(315.625%, 0, 0);
+    transform-origin: 365.625% 50%;
+}
+
+.cont.s--el-active .el:nth-child(4):not(.s--active) {
+    transform: scale(0.5) translate3d(315.625%, 0, 0);
+    opacity: 0;
+    transition: transform 0.95s, opacity 0.95s;
+}
+
+.el:nth-child(4) .el__inner {
+    transition-delay: 0.3s;
+}
+
+.el:nth-child(4) .el__bg {
+    transform: translate3d(-57.6%, 0, 0);
+}
+
+.el:nth-child(4) .el__bg:before {
+    transition-delay: 0.3s;
+    background-image: url("Images_cr/subpages/photography-of-person-holding-flashlight-near-windmills-1154460.jpg");
+} */
+
 .el:nth-child(5) {
     transform: translate3d(420.8333333333%, 0, 0);
     transform-origin: 470.8333333333% 50%;
@@ -474,4 +602,97 @@ body {
     font-weight: normal;
     font-size: 1em;
     position: relative;
+}
+
+
+/* .el:nth-child(5) .el__bg:before {
+    transition-delay: 0.4s;
+    background-image: url("Images_cr/subpages/person-holding-black-pen-1109541.jpg");
+}
+
+.el:hover .el__bg:after {
+    opacity: 0;
+}
+
+.el.s--active {
+    z-index: 1;
+    width: 100%;
+    transform: translate3d(0, 0, 0);
+    transition: transform 0.6s, width 0.7s 0.7s, z-index 0s;
+}
+
+.el.s--active .el__bg {
+    transform: translate3d(0, 0, 0);
+    transition: transform 0.6s;
+    opacity: 0.4;
+}
+
+.el.s--active .el__bg:before {
+    transition-delay: 0.6s;
+    transform: scale(1.1);
+}
+
+.icon-link {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    width: 32px;
+}
+
+.icon-link img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.icon-link--twitter {
+    left: auto;
+    right: 5px;
+}
+
+.redirectButton input[type=button] {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-style: solid;
+    margin: 4px 2px;
+    cursor: pointer;
+    z-index: 900;
+    font-family: Rockwell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    position: relative;
+} */
+
+
+/* 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.small_navBar {
+    display: none;
+}
+
+.navbar {
+    display: inline;
+}
+
+.small_cont {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .small_navBar {
+        display: inline;
+    }
+    .navbar {
+        display: none;
+    }
+    /* testing */
+}
+
+@media screen and (max-width: 1350px) {
+    .small_cont {
+        display: block;
+    }
 }
