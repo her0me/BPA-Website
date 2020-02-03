@@ -571,23 +571,6 @@ body {
     transform: scale(1.1);
 }
 
-.icon-link {
-    position: absolute;
-    left: 5px;
-    bottom: 5px;
-    width: 32px;
-}
-
-.icon-link img {
-    width: 100%;
-    vertical-align: top;
-}
-
-.icon-link--twitter {
-    left: auto;
-    right: 5px;
-}
-
 .redirectButton input[type=button] {
     background-color: rgba(0, 0, 0, 0);
     color: white;
