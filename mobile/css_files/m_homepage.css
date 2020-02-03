@@ -266,6 +266,18 @@ input[type=button] {
         padding-top: 3%;
         padding-bottom: 3%;
     }
+    .heading {
+        -webkit-backdrop-filter: saturate(180%) blur(20px) brightness(50%) !important;
+        -ms-backdrop-filter: saturate(180%) blur(20px) brightness(50%) !important;
+        backdrop-filter: saturate(180%) blur(20px) brightness(50%) !important;
+        background-color: rgba(0, 0, 0, 0.5);
+        box-shadow: 35px 29px 29px rgba(0, 0, 0, 0.55);
+        overflow: hidden;
+        width: 85%;
+        height: 36%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .VDV {
