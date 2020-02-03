@@ -12,10 +12,27 @@
     <link href="https://res.cloudinary.com/finnhvman/raw/upload/matter/matter-0.2.2.min.css" rel="stylesheet">
     <link rel="text/javascript" href="scriptfiles/lazy-line-painter-1.9.6.min.js" />
     <link rel="stylesheet" href="Scroll.css">
+
     <link rel="stylesheet" href="mobile/css_files/m_navigation.css">
 </head>
 
 <body>
+
+
+    <!-- start of navigation-->
+    <!-- start of navigation-->
+    <nav class="navbar">
+        <ul class="navlist">
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="biohome.htm">Bio-Home</a></li>
+            <li><a href="wind.htm">Wind</a></li>
+            <li><a href="solar.htm">Solar</a></li>
+            <li><a href="geo.htm">Geothermal</a></li>
+            <li class="nav_active"><a class="active" href="estimator.htm">Cost Savings Calculator</a></li>
+            <li><a href="ChallengesM.htm">Challenges</a></li>
+
+        </ul>
+    </nav>
 
     <div class="small_navBar">
 
@@ -24,28 +41,20 @@
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <!-- close end -->
                 <a href="index.htm">Home</a>
-                <a href="solar.htm">Solar</a>
+                <a href="biohome.htm">Bio-Home</a>
                 <a href="wind.htm">Wind</a>
+                <a href="solar.htm">Solar</a>
                 <a href="geo.htm">Geothermal</a>
                 <a class="present" href="estimator.htm">Cost Savings Calculator</a>
-                <a href="about.htm">About us</a>
+                <a href="ChallengesM.htm">Challenges</a>
             </div>
 
 
             <span onclick="openNav()"> &#9776; </span>
         </div>
     </div>
-    <!-- start of navigation-->
-    <nav class="navbar">
-        <ul class="navlist">
-            <li class="nav_active"><a href="index.htm">Home</a></li>
-            <li><a href="wind.htm">Wind</a></li>
-            <li><a href="solar.htm">Solar</a></li>
-            <li><a href="geo.htm">Geothermal</a></li>
-            <li><a class="active" href="estimator.htm">Cost Savings Calculator</a></li>
-            <li><a href="about.htm">About Us</a></li>
-        </ul>
-    </nav>
+
+    <!--navigation end-->
     <!--navigation end-->
 
     <svg version="1.1" id="A25228" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="511.613px" height="511.613px" viewBox="0 0 511.613 511.613" style="enable-background:new 0 0 511.613 511.613;" xml:space="preserve"
@@ -77,7 +86,7 @@
           <span class="headin">Electricity cost</span>
       </label>
             <div class="calc">
-                <input type="button" onclick="calculate()" Value="Calculate" class="calculateButton"/></div>
+                <input type="button" onclick="calculate()" Value="Calculate" class="calculateButton" /></div>
         </form>
 
 
@@ -126,11 +135,10 @@
         <!-- animantion end -->
         <!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
         <script>
-            
             // Get the input field
             var input1 = document.getElementById("usage");
             var input2 = document.getElementById("cost");
-            
+
             input1.addEventListener("keyup", function(event) {
                 // Number 13 is the "Enter" key on the keyboard
                 if (event.keyCode === 13) {
@@ -138,13 +146,13 @@
                     document.getElementsByClassName("calculateButton")[0].click()
                 }
             });
-            
+
             input2.addEventListener("keyup", function(event) {
                 if (event.keyCode === 13) {
                     document.getElementsByClassName("calculateButton")[0].click()
                 }
             });
-            
+
             function calculate() {
                 var kWH_usage = Number(input1.value);
                 var kWH_usage_test = String(kWH_usage);

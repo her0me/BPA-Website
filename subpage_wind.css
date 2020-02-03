@@ -108,3 +108,20 @@
         font-size: 1em;
         position: relative;
     }
+    
+    .small_navBar {
+        display: none;
+    }
+    
+    .navbar {
+        display: inline;
+    }
+    
+    @media screen and (max-width: 950px) {
+        .small_navBar {
+            display: inline;
+        }
+        .navbar {
+            display: none;
+        }
+    }

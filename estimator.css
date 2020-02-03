@@ -186,7 +186,7 @@ h1 {
     display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
     .small_navBar {
         display: inline;
     }

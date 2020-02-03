@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="navigation.css">
     <link rel="stylesheet" href="transition.css">
     <link rel="stylesheet" href="Scroll.css">
+
+    <link rel="stylesheet" href="mobile/css_files/m_navigation.css">
+
     <style>
         body {
             background-color: #08AEEA;
@@ -22,17 +25,42 @@
 
 <body>
     <!-- start of navigation-->
+    <!-- start of navigation-->
     <nav class="navbar">
         <ul class="navlist">
-            <li class="nav_active"><a href="index.htm">Home</a></li>
-            <li><a class="active" href="wind.htm">Wind</a></li>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="biohome.htm">Bio-Home</a></li>
+            <li class="nav_active"><a class="active" href="wind.htm">Wind</a></li>
             <li><a href="solar.htm">Solar</a></li>
             <li><a href="geo.htm">Geothermal</a></li>
             <li><a href="estimator.htm">Cost Savings Calculator</a></li>
-            <li><a href="about.htm">About Us</a></li>
+            <li><a href="ChallengesM.htm">Challenges</a></li>
+
         </ul>
     </nav>
+
+    <div class="small_navBar">
+
+        <div class="navigation">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <!-- close end -->
+                <a href="index.htm">Home</a>
+                <a href="biohome.htm">Bio-Home</a>
+                <a class="present" href="wind.htm">Wind</a>
+                <a href="solar.htm">Solar</a>
+                <a href="geo.htm">Geothermal</a>
+                <a href="estimator.htm">Cost Savings Calculator</a>
+                <a href="ChallengesM.htm">Challenges</a>
+            </div>
+
+
+            <span onclick="openNav()"> &#9776; </span>
+        </div>
+    </div>
     <!--navigation end-->
+    <!--navigation end-->
+
     <main id="swup" class="transition-fade">
         <div class="page_Content">
 
@@ -44,6 +72,7 @@
             Matters<br/>
             _</span> </div>
         </div> -->
+
             <div class="main_text">
                 <h1>
                     Background and Basics
@@ -135,13 +164,15 @@
 
     </main>
 
-    <!-- <script type="text/javascript">
-        if (screen.width <= 699) {
-            document.location = "mobile/m_index.htm";
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
         }
     </script>
-
-    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script> -->
 
 
 </body>
