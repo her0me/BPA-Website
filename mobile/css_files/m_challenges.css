@@ -79,6 +79,10 @@ h1 {
     margin-bottom: 10px;
 }
 
+.small_adj {
+    font-size: 15px !important;
+}
+
 h2 {
     font-family: Rockwell;
     font-style: normal;
