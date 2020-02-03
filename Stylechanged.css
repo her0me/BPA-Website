@@ -681,6 +681,10 @@ body {
     display: none;
 }
 
+#fp-nav ul {
+    display: none;
+}
+
 @media screen and (max-width: 1000px) {
     .small_navBar {
         display: inline;
@@ -693,6 +697,9 @@ body {
 
 @media screen and (max-width: 1350px) {
     .small_cont {
+        display: block;
+    }
+    #fp-nav ul {
         display: block;
     }
 }

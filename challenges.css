@@ -71,7 +71,6 @@
 
 h1 {
     text-align: center;
-    white-space: nowrap;
     font-family: Rockwell;
     font-style: normal;
     font-weight: normal;
@@ -80,15 +79,33 @@ h1 {
     letter-spacing: -0.27px;
 }
 
-p {
+h2 {
+    padding-left: 5%;
+    color: #fff;
+    font-size: 2em;
+}
+
+.infocont p {
     text-align: left;
-    white-space: nowrap;
     font-family: Rockwell;
     font-style: normal;
     font-weight: normal;
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: rgb(255, 255, 255);
     letter-spacing: -0.27px;
     padding-left: 5%;
     padding-right: 5%;
+}
+
+.infocont input[type=button] {
+    margin-left: 5%;
+    font-size: 2rem;
+}
+
+#fp-nav ul li a span {
+    background: #fff !important;
+}
+
+#fp-nav ul li .fp-tooltip {
+    color: #fff !important;
 }
